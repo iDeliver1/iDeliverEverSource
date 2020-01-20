@@ -26,13 +26,14 @@ public class LoginPage extends TestBase {
 		@FindBy(xpath="//div[@id='promotion-modal']//span[contains(text(),'×')]")
 		WebElement DialogueClose;
 		
-	
+		EverSource_HeaderMenu objcheck;
 		
 		
 		
 		//Initializing the Page Objects:
 		public LoginPage(){
 			PageFactory.initElements(driver, this);
+			objcheck = new EverSource_HeaderMenu();
 		}
 		
 		//Actions:
@@ -53,23 +54,27 @@ public class LoginPage extends TestBase {
 			log("Logging testing with username - "+usr);
 			log("Logging testing with password - "+pwd);
 			
+			waitforElement(10,Username);
 			Username.sendKeys(usr);
 			Password.sendKeys(pwd);
 			Signin.click();	
 			
 			try{
+				waitforElement(10, DialogueClose);
 				DialogueClose.isDisplayed();
 			}catch(Exception e){
 				
 			}
 			
 			DialogueClose.click();
-			if(validateSalesForceLogo()){
 			
-				
-				
-				
+			objcheck.CheckHeaderMenu();
+			
+			
+			if(validateSalesForceLogo()){
+		
 				log("Successful logging with username -  "+usr);
+				Reporting("Pass", "Login Validation");
 				
 				return new HomePage();
 

@@ -3,6 +3,7 @@ package com.eversource.qa.pages;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+
 import com.eversource.qa.base.TestBase;
 import com.eversource.qa.util.Extent_reporter;
 
@@ -11,6 +12,9 @@ public class PayBill extends TestBase {
 
 	@FindBy(xpath=" //span[@id='main_lblAccountNo']")
 	WebElement AccountNumber;
+	
+	@FindBy(xpath="//span[@id='main_lblNickName']")
+	WebElement AccountNickName;
 	
 	@FindBy(xpath="//span[@class='filter-option pull-left'][contains(text(),'Select Bank Account')]")
 	WebElement SelectPaymentOption;
@@ -29,6 +33,9 @@ public class PayBill extends TestBase {
 	
 	@FindBy(xpath=" //label[contains(text(),'Other:')]")
 	WebElement OtherDue;
+	
+	@FindBy(xpath="//input[@id='main_txtOtherAmt']")
+	WebElement OtherAmtDue;
 	
 	@FindBy(xpath="//label[contains(text(),'Pay Now')]")
 	WebElement SelectDateNow;
@@ -59,21 +66,31 @@ public class PayBill extends TestBase {
 	
 	@FindBy(xpath="//a[@id='main_btnConfirm']")
 	WebElement Submit;
-	String AccNo,AccDate,DDate,AmtPri;
+	String AccNo,AccDate,DDate,AmtPri,OtherAmountDue = "40.25";
+	
 	
 	
 	public PayBill() {
 		PageFactory.initElements(driver, this);
+		
 	}
 
 	
-	public void createPayBill(String PaymentOption) throws Throwable{
+	public void PayBillTab(String PaymentOption) throws Throwable{
 		
-		EverSource_HeaderMenu.CheckHeaderMenu();
+	
 		
 		
-		AccNo = AccountNumber.getText();
-		log("Account Number is "+AccountNumber.getText());
+		//Checking PatTest is there or not
+		if(AccountNickName.getText().isEmpty()){
+			AccNo = AccountNumber.getText();
+		}
+		else{
+			AccNo = AccountNumber.getText().concat(" "+AccountNickName.getText());
+		}
+		
+		
+		log("Account Number is "+AccNo);
 		
 		SelectPaymentOption.click();
 		
@@ -89,8 +106,16 @@ public class PayBill extends TestBase {
 		   PaymentAron.click();
 		   }  
 		   
-		   AmountDue.click();
+		  //Checking Amount is $0.00 or not
 		   AmtPri = AmountPrice.getText();
+		   if (AmtPri.contains("0.00")){  //if it is $0.00 the clicking on Other due with input value of $40.25 
+			   OtherDue.click();
+			   OtherAmtDue.clear();
+			   OtherAmtDue.sendKeys(OtherAmountDue);
+			   AmtPri ="$"+ OtherAmountDue;
+		   }else{
+			   AmountDue.click();
+		   }
 		
 		   SelectDateNow.click();
 		   AccDate=ActualDate.getText();
@@ -98,12 +123,16 @@ public class PayBill extends TestBase {
 		  
 		   Submit.click();
 		   
+		   //Validation for Account Number equals or not
 		   Extent_reporter.Argvalidation("Account Number Validation",AccNo, AccountNumber1.getText());
 		   
+		 //Validation for Due Date equals or not
 		   Extent_reporter.Argvalidation("Due Date Validation",DDate, DueDate1.getText());
 		   
+		 //Validation for Amount Price equals or not
 		   Extent_reporter.Argvalidation("Amount Price Vaildation",AmtPri, AmountPrice1.getText());
 		   
+		 //Validation for Actual Date equals or not
 		   Extent_reporter.Argvalidation("Actual Date Validation",AccDate, ActualDate1.getText());
 		
 		

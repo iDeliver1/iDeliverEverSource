@@ -3,16 +3,20 @@ package com.eversource.qa.base;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.time.Duration;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 import java.util.logging.Logger;
 
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.FluentWait;
+import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Reporter;
 
@@ -20,9 +24,12 @@ import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 import com.eversource.qa.util.*;
+import com.google.common.base.Function;
 
 public class TestBase  {
 	public static final Logger log = Logger.getLogger(TestBase.class.getName());
+	private static final Duration DEFAULT_WAIT_POLLING = Duration.ofSeconds(1);
+	private static final Duration DEFAULT_WAIT_DURATION = Duration.ofSeconds(50);
 	public static WebDriver driver;
 	public static WebDriver yopdriver;
 	public static Properties prop;
@@ -32,6 +39,9 @@ public class TestBase  {
 	ExtentHtmlReporter htmlReporter;
 	static ExtentReports extent;
 	
+	
+	
+		      
 	public TestBase(){
 		try {
 			prop = new Properties();
@@ -89,38 +99,11 @@ public class TestBase  {
 	
 		
 }
-	//Initiating YopMail
-	public static void Yopinitialization(){
-		String browserName = prop.getProperty("browser");
-		
-		if(browserName.equals("chrome")){
-			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/src/main/java/com/eversource/qa/driver/chromedriver.exe");
-			yopdriver = new ChromeDriver(); 
-		}
-		else if(browserName.equals("FF")){
-			System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + "/src/main/java/com/eversource/qa/driver/geckodriver.exe");	
-			yopdriver = new FirefoxDriver(); 
-		}
-		
-		
-		e_driver = new EventFiringWebDriver(yopdriver);
-		// Now create object of EventListerHandler to register it with EventFiringWebDriver
-		eventListener = new WebEventListener();
-		e_driver.register(eventListener);
-		yopdriver = e_driver;
-		
-		yopdriver.manage().window().maximize();
-		yopdriver.manage().deleteAllCookies();
-		yopdriver.manage().timeouts().pageLoadTimeout(TestUtil.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
-		yopdriver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT, TimeUnit.SECONDS);		
-		yopdriver.get(prop.getProperty("yopurl"));
-		
-}
+	
 	//Logging method so that the same log is added in logger as well as syso
-		public static void log(String data) {
-			
-			log.info(data);
-			Reporter.log(data);
+		public static void log(String e) {
+			log.info(e);
+			Reporter.log(e);
 		}
 	
 	
@@ -135,12 +118,56 @@ public class TestBase  {
 		
 	}
 	
+	//Explicit Wait
 	public static  void waitforElement(long timeoutseconds, WebElement element) {
-
 		WebDriverWait wait = new WebDriverWait(driver, timeoutseconds);
 		wait.until(ExpectedConditions.visibilityOf(element));
 	}
 	
+	//PageLoadTimeout Function
+	public static void waitfunction(){
+		driver.manage().timeouts().pageLoadTimeout(TestUtil.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT, TimeUnit.SECONDS);	
+	}
+	
+
+
+	//Fluent Wait for an Element for event for clicking or checking
+	public static void WaitForObject(  final WebElement element,String EventName) throws InterruptedException{
+		Wait<WebDriver> wait = new FluentWait<WebDriver> (driver)
+		   .withTimeout(DEFAULT_WAIT_POLLING)
+		   .pollingEvery(DEFAULT_WAIT_DURATION)
+		   .ignoring(NoSuchElementException.class);
+	
+		 WebElement foo = wait.until(new Function<WebDriver, WebElement>() { 
+		     public WebElement apply(WebDriver driver) {
+		      return element;
+		     }
+		   });
+		foo.isDisplayed();
+		if(EventName.contains("Click")){
+			
+			try{
+				foo.click();
+			}catch(Exception f){
+				System.out.println(f);
+			}
+			
+		}
+	}
+	
+	public static boolean isClickable(WebElement el) 
+	{
+		try{
+			WebDriverWait wait = new WebDriverWait(driver, 6);
+			wait.until(ExpectedConditions.elementToBeClickable(el));
+			return true;
+		}
+		catch (Exception e){
+			return false;
+		
+		}
+	}
 	//Closing Browser And Saving Report 
 	public static void closeBrowser() {
 		driver.close();

@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Default_suite">
-              <span class="suite-name border-failed">Default suite</span>
+              <span class="suite-name border-passed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\iDeliver20\AppData\Local\Temp\testng-eclipse-623796598\testng-customsuite.xml</span>
+                    <span>C:\Users\iDeliver20\AppData\Local\Temp\testng-eclipse-129576805\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,26 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods, 2 failed,   1 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Default_suite">
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.eversource.qa.testcases.LoginPageTest" hash-for-method="AccHistoryTest">AccHistoryTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.eversource.qa.testcases.LoginPageTest" hash-for-method="PayBillTest">PayBillTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Default_suite -->
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -121,7 +102,17 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.eversource.qa.testcases.LoginPageTest" hash-for-method="AccountHistoryTest">AccountHistoryTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.eversource.qa.testcases.LoginPageTest" hash-for-method="LoginTest">LoginTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.eversource.qa.testcases.LoginPageTest" hash-for-method="PayBillTest">PayBillTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -136,119 +127,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">com.eversource.qa.testcases.LoginPageTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="AccHistoryTest">
-                  </a> <!-- AccHistoryTest -->
-                  <span class="method-name">AccHistoryTest</span>
-                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a title=&quot;...&quot; data-subnav=&quot;1&quot; aria-haspopup=&quot;true&quot; role=&quot;menuitem&quot;&gt;My Account&lt;/a&gt; is not clickable at point (283, 212). Other element would receive the click: &lt;div class=&quot;modal-backdrop fade&quot;&gt;&lt;/div&gt;
-  (Session info: chrome=79.0.3945.117)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;IDELIVER20-PC&apos;, ip: &apos;10.4.64.163&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_231&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.117, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\Users\IDELIV~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53804}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 10537e31b2af622ff2c9e709e8c73919
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:404)
-	at com.sun.proxy.$Proxy13.click(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:417)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy11.click(Unknown Source)
-	at com.eversource.qa.pages.HomePage.clickOnAccountsLink(HomePage.java:59)
-	at com.eversource.qa.testcases.LoginPageTest.AccHistoryTest(LoginPageTest.java:64)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:782)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
-
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="PayBillTest">
-                  </a> <!-- PayBillTest -->
-                  <span class="method-name">PayBillTest</span>
-                  <div class="stack-trace">java.lang.NullPointerException
-	at com.eversource.qa.util.Extent_reporter.Menuvalidation(Extent_reporter.java:67)
-	at com.eversource.qa.pages.EverSource_HeaderMenu.CheckHeaderMenu(EverSource_HeaderMenu.java:27)
-	at com.eversource.qa.pages.PayBill.createPayBill(PayBill.java:72)
-	at com.eversource.qa.testcases.LoginPageTest.PayBillTest(LoginPageTest.java:88)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:782)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
-
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-failed -->
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -257,9 +135,23 @@ Session ID: 10537e31b2af622ff2c9e709e8c73919
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+                  <a name="AccountHistoryTest">
+                  </a> <!-- AccountHistoryTest -->
+                  <span class="method-name">AccountHistoryTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="LoginTest">
                   </a> <!-- LoginTest -->
                   <span class="method-name">LoginTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="PayBillTest">
+                  </a> <!-- PayBillTest -->
+                  <span class="method-name">PayBillTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -267,7 +159,7 @@ Session ID: 10537e31b2af622ff2c9e709e8c73919
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\iDeliver20\AppData\Local\Temp\testng-eclipse-623796598\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\iDeliver20\AppData\Local\Temp\testng-eclipse-129576805\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -318,17 +210,17 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'LoginTest')
+data.setCell(0, 1, 'AccountHistoryTest')
 data.setCell(0, 2, 'com.eversource.qa.testcases.LoginPageTest')
-data.setCell(0, 3, 45558);
+data.setCell(0, 3, 41632);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'PayBillTest')
+data.setCell(1, 1, 'LoginTest')
 data.setCell(1, 2, 'com.eversource.qa.testcases.LoginPageTest')
-data.setCell(1, 3, 14954);
+data.setCell(1, 3, 36083);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'AccHistoryTest')
+data.setCell(2, 1, 'PayBillTest')
 data.setCell(2, 2, 'com.eversource.qa.testcases.LoginPageTest')
-data.setCell(2, 3, 915);
+data.setCell(2, 3, 19552);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
@@ -345,6 +237,128 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="reporter-method-div">
+              <span class="reporter-method-name">AccountHistoryTest</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">-----------------------AccountHistoryTest--------------</span>
+                <span class="reporter-method-output">Account History</span>
+                <span class="reporter-method-output">Trying to find Element By : By.xpath: //ul[@class='nav nav-tabs']//a[contains(text(),'My Account')]</span>
+                <span class="reporter-method-output">Found Element By : By.xpath: //ul[@class='nav nav-tabs']//a[contains(text(),'My Account')]</span>
+                <span class="reporter-method-output">Trying to find Element By : By.xpath: //ul[@class='nav nav-tabs']//a[contains(text(),'My Account')]</span>
+                <span class="reporter-method-output">Found Element By : By.xpath: //ul[@class='nav nav-tabs']//a[contains(text(),'My Account')]</span>
+                <span class="reporter-method-output">Trying to click on: [[ChromeDriver: chrome on XP (8a580b93f6845f5b4693642b287d0517)] -> xpath: //ul[@class='nav nav-tabs']//a[contains(text(),'My Account')]]</span>
+                <span class="reporter-method-output">Clicked on: [[ChromeDriver: chrome on XP (8a580b93f6845f5b4693642b287d0517)] -> xpath: //ul[@class='nav nav-tabs']//a[contains(text(),'My Account')]]</span>
+                <span class="reporter-method-output">Trying to find Element By : By.xpath: //ul[@class='list-unstyled']//a[contains(text(),'Account History')]</span>
+                <span class="reporter-method-output">Found Element By : By.xpath: //ul[@class='list-unstyled']//a[contains(text(),'Account History')]</span>
+                <span class="reporter-method-output">Trying to find Element By : By.xpath: //ul[@class='list-unstyled']//a[contains(text(),'Account History')]</span>
+                <span class="reporter-method-output">Found Element By : By.xpath: //ul[@class='list-unstyled']//a[contains(text(),'Account History')]</span>
+                <span class="reporter-method-output">Trying to click on: [[ChromeDriver: chrome on XP (8a580b93f6845f5b4693642b287d0517)] -> xpath: //ul[@class='list-unstyled']//a[contains(text(),'Account History')]]</span>
+                <span class="reporter-method-output">Clicked on: [[ChromeDriver: chrome on XP (8a580b93f6845f5b4693642b287d0517)] -> xpath: //ul[@class='list-unstyled']//a[contains(text(),'Account History')]]</span>
+                <span class="reporter-method-output">Clicked on Account History Link</span>
+                <span class="reporter-method-output">Trying to find Element By : By.xpath: //div[@class='header-top']</span>
+                <span class="reporter-method-output">Found Element By : By.xpath: //div[@class='header-top']</span>
+                <span class="reporter-method-output">Header TopMenu Validation is Visible </span>
+                <span class="reporter-method-output">Trying to find Element By : By.xpath: //div[@class='primary-nav-wrapper']</span>
+                <span class="reporter-method-output">Found Element By : By.xpath: //div[@class='primary-nav-wrapper']</span>
+                <span class="reporter-method-output">Header Menu Validation is Visible </span>
+                <span class="reporter-method-output">Trying to find Element By : By.xpath: //div[@id='divLeftNav']</span>
+                <span class="reporter-method-output">Found Element By : By.xpath: //div[@id='divLeftNav']</span>
+                <span class="reporter-method-output">Trying to find Element By : By.xpath: //div[@id='divLeftNav']</span>
+                <span class="reporter-method-output">Found Element By : By.xpath: //div[@id='divLeftNav']</span>
+                <span class="reporter-method-output">Side Menu Validation is Visible </span>
+                <span class="reporter-method-output">Trying to find Element By : By.xpath: //span[@class='filter-option pull-left'][contains(text(),'10010730041')]</span>
+                <span class="reporter-method-output">Found Element By : By.xpath: //span[@class='filter-option pull-left'][contains(text(),'10010730041')]</span>
+                <span class="reporter-method-output">Trying to find Element By : By.xpath: //span[@class='filter-option pull-left'][contains(text(),'10010730041')]</span>
+                <span class="reporter-method-output">Found Element By : By.xpath: //span[@class='filter-option pull-left'][contains(text(),'10010730041')]</span>
+                <span class="reporter-method-output">Trying to click on: [[ChromeDriver: chrome on XP (8a580b93f6845f5b4693642b287d0517)] -> xpath: //span[@class='filter-option pull-left'][contains(text(),'10010730041')]]</span>
+                <span class="reporter-method-output">Clicked on: [[ChromeDriver: chrome on XP (8a580b93f6845f5b4693642b287d0517)] -> xpath: //span[@class='filter-option pull-left'][contains(text(),'10010730041')]]</span>
+                <span class="reporter-method-output">Trying to find Element By : By.xpath: //div[@class='btn-group bootstrap-select form-control dropup open']//span[@class='text'][contains(text(),'ALL')]</span>
+                <span class="reporter-method-output">Found Element By : By.xpath: //div[@class='btn-group bootstrap-select form-control dropup open']//span[@class='text'][contains(text(),'ALL')]</span>
+                <span class="reporter-method-output">Trying to find Element By : By.xpath: //div[@class='btn-group bootstrap-select form-control dropup open']//span[@class='text'][contains(text(),'ALL')]</span>
+                <span class="reporter-method-output">Found Element By : By.xpath: //div[@class='btn-group bootstrap-select form-control dropup open']//span[@class='text'][contains(text(),'ALL')]</span>
+                <span class="reporter-method-output">Trying to click on: [[ChromeDriver: chrome on XP (8a580b93f6845f5b4693642b287d0517)] -> xpath: //div[@class='btn-group bootstrap-select form-control dropup open']//span[@class='text'][contains(text(),'ALL')]]</span>
+                <span class="reporter-method-output">Clicked on: [[ChromeDriver: chrome on XP (8a580b93f6845f5b4693642b287d0517)] -> xpath: //div[@class='btn-group bootstrap-select form-control dropup open']//span[@class='text'][contains(text(),'ALL')]]</span>
+                <span class="reporter-method-output">Trying to find Element By : By.xpath: //a[@id='main_lnkApply']</span>
+                <span class="reporter-method-output">Found Element By : By.xpath: //a[@id='main_lnkApply']</span>
+                <span class="reporter-method-output">Trying to click on: [[ChromeDriver: chrome on XP (8a580b93f6845f5b4693642b287d0517)] -> xpath: //a[@id='main_lnkApply']]</span>
+                <span class="reporter-method-output">Clicked on: [[ChromeDriver: chrome on XP (8a580b93f6845f5b4693642b287d0517)] -> xpath: //a[@id='main_lnkApply']]</span>
+                <span class="reporter-method-output">Trying to find Element By : By.xpath: //table[@id='payHistList']</span>
+                <span class="reporter-method-output">Found Element By : By.xpath: //table[@id='payHistList']</span>
+                <span class="reporter-method-output">Trying to find Element By : By.tagName: tr</span>
+                <span class="reporter-method-output">Found Element By : By.tagName: tr</span>
+                <span class="reporter-method-output">There is data</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">PayBillTest</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">-----------------------PayBillTest--------------</span>
+                <span class="reporter-method-output">Pay Bill</span>
+                <span class="reporter-method-output">Trying to find Element By : By.xpath: //ul[@class='nav nav-tabs']//a[contains(text(),'My Account')]</span>
+                <span class="reporter-method-output">Found Element By : By.xpath: //ul[@class='nav nav-tabs']//a[contains(text(),'My Account')]</span>
+                <span class="reporter-method-output">Trying to find Element By : By.xpath: //ul[@class='nav nav-tabs']//a[contains(text(),'My Account')]</span>
+                <span class="reporter-method-output">Found Element By : By.xpath: //ul[@class='nav nav-tabs']//a[contains(text(),'My Account')]</span>
+                <span class="reporter-method-output">Trying to click on: [[ChromeDriver: chrome on XP (8a580b93f6845f5b4693642b287d0517)] -> xpath: //ul[@class='nav nav-tabs']//a[contains(text(),'My Account')]]</span>
+                <span class="reporter-method-output">Clicked on: [[ChromeDriver: chrome on XP (8a580b93f6845f5b4693642b287d0517)] -> xpath: //ul[@class='nav nav-tabs']//a[contains(text(),'My Account')]]</span>
+                <span class="reporter-method-output">Trying to find Element By : By.xpath: //ul[@class='list-unstyled']//a[contains(text(),'Pay Bill')]</span>
+                <span class="reporter-method-output">Found Element By : By.xpath: //ul[@class='list-unstyled']//a[contains(text(),'Pay Bill')]</span>
+                <span class="reporter-method-output">Trying to find Element By : By.xpath: //ul[@class='list-unstyled']//a[contains(text(),'Pay Bill')]</span>
+                <span class="reporter-method-output">Found Element By : By.xpath: //ul[@class='list-unstyled']//a[contains(text(),'Pay Bill')]</span>
+                <span class="reporter-method-output">Trying to click on: [[ChromeDriver: chrome on XP (8a580b93f6845f5b4693642b287d0517)] -> xpath: //ul[@class='list-unstyled']//a[contains(text(),'Pay Bill')]]</span>
+                <span class="reporter-method-output">Clicked on: [[ChromeDriver: chrome on XP (8a580b93f6845f5b4693642b287d0517)] -> xpath: //ul[@class='list-unstyled']//a[contains(text(),'Pay Bill')]]</span>
+                <span class="reporter-method-output">Clicked on Pay Bill Link</span>
+                <span class="reporter-method-output">Trying to find Element By : By.xpath: //div[@class='header-top']</span>
+                <span class="reporter-method-output">Found Element By : By.xpath: //div[@class='header-top']</span>
+                <span class="reporter-method-output">Header TopMenu Validation is Visible </span>
+                <span class="reporter-method-output">Trying to find Element By : By.xpath: //div[@class='primary-nav-wrapper']</span>
+                <span class="reporter-method-output">Found Element By : By.xpath: //div[@class='primary-nav-wrapper']</span>
+                <span class="reporter-method-output">Header Menu Validation is Visible </span>
+                <span class="reporter-method-output">Trying to find Element By : By.xpath: //span[@id='main_lblNickName']</span>
+                <span class="reporter-method-output">Found Element By : By.xpath: //span[@id='main_lblNickName']</span>
+                <span class="reporter-method-output">Trying to find Element By : By.xpath:  //span[@id='main_lblAccountNo']</span>
+                <span class="reporter-method-output">Found Element By : By.xpath:  //span[@id='main_lblAccountNo']</span>
+                <span class="reporter-method-output">Account Number is 10010730041</span>
+                <span class="reporter-method-output">Trying to find Element By : By.xpath: //span[@class='filter-option pull-left'][contains(text(),'Select Bank Account')]</span>
+                <span class="reporter-method-output">Found Element By : By.xpath: //span[@class='filter-option pull-left'][contains(text(),'Select Bank Account')]</span>
+                <span class="reporter-method-output">Trying to click on: [[ChromeDriver: chrome on XP (8a580b93f6845f5b4693642b287d0517)] -> xpath: //span[@class='filter-option pull-left'][contains(text(),'Select Bank Account')]]</span>
+                <span class="reporter-method-output">Clicked on: [[ChromeDriver: chrome on XP (8a580b93f6845f5b4693642b287d0517)] -> xpath: //span[@class='filter-option pull-left'][contains(text(),'Select Bank Account')]]</span>
+                <span class="reporter-method-output">Trying to find Element By : By.xpath:   //div[@class='btn-group bootstrap-select form-control open']//li[2]//a[1]</span>
+                <span class="reporter-method-output">Found Element By : By.xpath:   //div[@class='btn-group bootstrap-select form-control open']//li[2]//a[1]</span>
+                <span class="reporter-method-output">Trying to click on: [[ChromeDriver: chrome on XP (8a580b93f6845f5b4693642b287d0517)] -> xpath:   //div[@class='btn-group bootstrap-select form-control open']//li[2]//a[1]]</span>
+                <span class="reporter-method-output">Clicked on: [[ChromeDriver: chrome on XP (8a580b93f6845f5b4693642b287d0517)] -> xpath:   //div[@class='btn-group bootstrap-select form-control open']//li[2]//a[1]]</span>
+                <span class="reporter-method-output">Clicked on Aron Payment Method</span>
+                <span class="reporter-method-output">Trying to find Element By : By.xpath:  //span[@id='main_lblAmountDue']</span>
+                <span class="reporter-method-output">Found Element By : By.xpath:  //span[@id='main_lblAmountDue']</span>
+                <span class="reporter-method-output">Trying to find Element By : By.xpath:   //label[contains(text(),'Amount Due:')]</span>
+                <span class="reporter-method-output">Found Element By : By.xpath:   //label[contains(text(),'Amount Due:')]</span>
+                <span class="reporter-method-output">Trying to click on: [[ChromeDriver: chrome on XP (8a580b93f6845f5b4693642b287d0517)] -> xpath:   //label[contains(text(),'Amount Due:')]]</span>
+                <span class="reporter-method-output">Clicked on: [[ChromeDriver: chrome on XP (8a580b93f6845f5b4693642b287d0517)] -> xpath:   //label[contains(text(),'Amount Due:')]]</span>
+                <span class="reporter-method-output">Trying to find Element By : By.xpath: //label[contains(text(),'Pay Now')]</span>
+                <span class="reporter-method-output">Found Element By : By.xpath: //label[contains(text(),'Pay Now')]</span>
+                <span class="reporter-method-output">Trying to click on: [[ChromeDriver: chrome on XP (8a580b93f6845f5b4693642b287d0517)] -> xpath: //label[contains(text(),'Pay Now')]]</span>
+                <span class="reporter-method-output">Clicked on: [[ChromeDriver: chrome on XP (8a580b93f6845f5b4693642b287d0517)] -> xpath: //label[contains(text(),'Pay Now')]]</span>
+                <span class="reporter-method-output">Trying to find Element By : By.xpath: //span[@id='main_lblPayASAP']</span>
+                <span class="reporter-method-output">Found Element By : By.xpath: //span[@id='main_lblPayASAP']</span>
+                <span class="reporter-method-output">Trying to find Element By : By.xpath:  //span[@id='main_lblDueDate']</span>
+                <span class="reporter-method-output">Found Element By : By.xpath:  //span[@id='main_lblDueDate']</span>
+                <span class="reporter-method-output">Trying to find Element By : By.xpath: //a[@id='main_btnConfirm']</span>
+                <span class="reporter-method-output">Found Element By : By.xpath: //a[@id='main_btnConfirm']</span>
+                <span class="reporter-method-output">Trying to click on: [[ChromeDriver: chrome on XP (8a580b93f6845f5b4693642b287d0517)] -> xpath: //a[@id='main_btnConfirm']]</span>
+                <span class="reporter-method-output">Clicked on: [[ChromeDriver: chrome on XP (8a580b93f6845f5b4693642b287d0517)] -> xpath: //a[@id='main_btnConfirm']]</span>
+                <span class="reporter-method-output">Trying to find Element By : By.xpath: //td[@class='tdAccountNumber']</span>
+                <span class="reporter-method-output">Found Element By : By.xpath: //td[@class='tdAccountNumber']</span>
+                <span class="reporter-method-output">Account Number Validation      10010730041 is equal to 10010730041</span>
+                <span class="reporter-method-output">Trying to find Element By : By.xpath:  //td[@class='tdDueDate']</span>
+                <span class="reporter-method-output">Found Element By : By.xpath:  //td[@class='tdDueDate']</span>
+                <span class="reporter-method-output">Due Date Validation      10/09/2018 is equal to 10/09/2018</span>
+                <span class="reporter-method-output">Trying to find Element By : By.xpath:  //td[@class='tdPaymentAmount']</span>
+                <span class="reporter-method-output">Found Element By : By.xpath:  //td[@class='tdPaymentAmount']</span>
+                <span class="reporter-method-output">Amount Price Vaildation      $8,760.60 is equal to $8,760.60</span>
+                <span class="reporter-method-output">Trying to find Element By : By.xpath: //td[@class='tdPaymentDate']</span>
+                <span class="reporter-method-output">Found Element By : By.xpath: //td[@class='tdPaymentDate']</span>
+                <span class="reporter-method-output">Actual Date Validation      01/20/2020 is equal to 01/20/2020</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
               <span class="reporter-method-name">LoginTest</span>
               <div class="reporter-method-output-div">
                 <span class="reporter-method-output">-----------------------LoginTest--------------</span>
@@ -352,62 +366,38 @@ return data;
                 <span class="reporter-method-output">Found Element By : By.xpath: //div[@id='RegionSelectorModal']//div[@class='modal-dialog']//div[@class='modal-content col-xs-12 col-sm-10 col-sm-offset-1 col-md-12 col-md-offset-0']//div[@class='modal-body']</span>
                 <span class="reporter-method-output">Trying to find Element By : By.xpath: //div[@id='map']//a[contains(text(),'New Hampshire')]</span>
                 <span class="reporter-method-output">Found Element By : By.xpath: //div[@id='map']//a[contains(text(),'New Hampshire')]</span>
-                <span class="reporter-method-output">Trying to click on: [[ChromeDriver: chrome on XP (10537e31b2af622ff2c9e709e8c73919)] -> xpath: //div[@id='map']//a[contains(text(),'New Hampshire')]]</span>
-                <span class="reporter-method-output">Clicked on: [[ChromeDriver: chrome on XP (10537e31b2af622ff2c9e709e8c73919)] -> xpath: //div[@id='map']//a[contains(text(),'New Hampshire')]]</span>
+                <span class="reporter-method-output">Trying to click on: [[ChromeDriver: chrome on XP (8a580b93f6845f5b4693642b287d0517)] -> xpath: //div[@id='map']//a[contains(text(),'New Hampshire')]]</span>
+                <span class="reporter-method-output">Clicked on: [[ChromeDriver: chrome on XP (8a580b93f6845f5b4693642b287d0517)] -> xpath: //div[@id='map']//a[contains(text(),'New Hampshire')]]</span>
                 <span class="reporter-method-output">Clicked on New Hampshire Link</span>
                 <span class="reporter-method-output">Logging testing with username - perftest1</span>
                 <span class="reporter-method-output">Logging testing with password - #Eversource1</span>
+                <span class="reporter-method-output">Trying to find Element By : By.xpath: //input[@id='Main_Login_txtUserName']</span>
+                <span class="reporter-method-output">Found Element By : By.xpath: //input[@id='Main_Login_txtUserName']</span>
                 <span class="reporter-method-output">Trying to find Element By : By.xpath: //input[@id='Main_Login_txtUserName']</span>
                 <span class="reporter-method-output">Found Element By : By.xpath: //input[@id='Main_Login_txtUserName']</span>
                 <span class="reporter-method-output">Trying to find Element By : By.xpath: //input[@id='Main_Login_txtPassword']</span>
                 <span class="reporter-method-output">Found Element By : By.xpath: //input[@id='Main_Login_txtPassword']</span>
                 <span class="reporter-method-output">Trying to find Element By : By.xpath: //input[@id='Main_Login_btnLoginEnter']</span>
                 <span class="reporter-method-output">Found Element By : By.xpath: //input[@id='Main_Login_btnLoginEnter']</span>
-                <span class="reporter-method-output">Trying to click on: [[ChromeDriver: chrome on XP (10537e31b2af622ff2c9e709e8c73919)] -> xpath: //input[@id='Main_Login_btnLoginEnter']]</span>
-                <span class="reporter-method-output">Clicked on: [[ChromeDriver: chrome on XP (10537e31b2af622ff2c9e709e8c73919)] -> xpath: //input[@id='Main_Login_btnLoginEnter']]</span>
+                <span class="reporter-method-output">Trying to click on: [[ChromeDriver: chrome on XP (8a580b93f6845f5b4693642b287d0517)] -> xpath: //input[@id='Main_Login_btnLoginEnter']]</span>
+                <span class="reporter-method-output">Clicked on: [[ChromeDriver: chrome on XP (8a580b93f6845f5b4693642b287d0517)] -> xpath: //input[@id='Main_Login_btnLoginEnter']]</span>
                 <span class="reporter-method-output">Trying to find Element By : By.xpath: //div[@id='promotion-modal']//span[contains(text(),'×')]</span>
                 <span class="reporter-method-output">Found Element By : By.xpath: //div[@id='promotion-modal']//span[contains(text(),'×')]</span>
                 <span class="reporter-method-output">Trying to find Element By : By.xpath: //div[@id='promotion-modal']//span[contains(text(),'×')]</span>
                 <span class="reporter-method-output">Found Element By : By.xpath: //div[@id='promotion-modal']//span[contains(text(),'×')]</span>
-                <span class="reporter-method-output">Trying to click on: [[ChromeDriver: chrome on XP (10537e31b2af622ff2c9e709e8c73919)] -> xpath: //div[@id='promotion-modal']//span[contains(text(),'×')]]</span>
-                <span class="reporter-method-output">Clicked on: [[ChromeDriver: chrome on XP (10537e31b2af622ff2c9e709e8c73919)] -> xpath: //div[@id='promotion-modal']//span[contains(text(),'×')]]</span>
+                <span class="reporter-method-output">Trying to find Element By : By.xpath: //div[@id='promotion-modal']//span[contains(text(),'×')]</span>
+                <span class="reporter-method-output">Found Element By : By.xpath: //div[@id='promotion-modal']//span[contains(text(),'×')]</span>
+                <span class="reporter-method-output">Trying to click on: [[ChromeDriver: chrome on XP (8a580b93f6845f5b4693642b287d0517)] -> xpath: //div[@id='promotion-modal']//span[contains(text(),'×')]]</span>
+                <span class="reporter-method-output">Clicked on: [[ChromeDriver: chrome on XP (8a580b93f6845f5b4693642b287d0517)] -> xpath: //div[@id='promotion-modal']//span[contains(text(),'×')]]</span>
+                <span class="reporter-method-output">Trying to find Element By : By.xpath: //div[@class='header-top']</span>
+                <span class="reporter-method-output">Found Element By : By.xpath: //div[@class='header-top']</span>
+                <span class="reporter-method-output">Header TopMenu Validation is Visible </span>
+                <span class="reporter-method-output">Trying to find Element By : By.xpath: //div[@class='primary-nav-wrapper']</span>
+                <span class="reporter-method-output">Found Element By : By.xpath: //div[@class='primary-nav-wrapper']</span>
+                <span class="reporter-method-output">Header Menu Validation is Visible </span>
                 <span class="reporter-method-output">Trying to find Element By : By.xpath: //div[@class='col-sm-6 col-xs-8']//img[@class='logo img-responsive']</span>
                 <span class="reporter-method-output">Found Element By : By.xpath: //div[@class='col-sm-6 col-xs-8']//img[@class='logo img-responsive']</span>
                 <span class="reporter-method-output">Successful logging with username -  perftest1</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">PayBillTest</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">-----------------------PayBillTest--------------</span>
-                <span class="reporter-method-output">Trying to find Element By : By.xpath: //ul[@class='nav nav-tabs']//a[contains(text(),'My Account')]</span>
-                <span class="reporter-method-output">Found Element By : By.xpath: //ul[@class='nav nav-tabs']//a[contains(text(),'My Account')]</span>
-                <span class="reporter-method-output">Trying to click on: [[ChromeDriver: chrome on XP (10537e31b2af622ff2c9e709e8c73919)] -> xpath: //ul[@class='nav nav-tabs']//a[contains(text(),'My Account')]]</span>
-                <span class="reporter-method-output">Clicked on: [[ChromeDriver: chrome on XP (10537e31b2af622ff2c9e709e8c73919)] -> xpath: //ul[@class='nav nav-tabs']//a[contains(text(),'My Account')]]</span>
-                <span class="reporter-method-output">Pay Bill</span>
-                <span class="reporter-method-output">Trying to find Element By : By.xpath: //ul[@class='list-unstyled']//a[contains(text(),'Pay Bill')]</span>
-                <span class="reporter-method-output">Found Element By : By.xpath: //ul[@class='list-unstyled']//a[contains(text(),'Pay Bill')]</span>
-                <span class="reporter-method-output">Trying to find Element By : By.xpath: //ul[@class='list-unstyled']//a[contains(text(),'Pay Bill')]</span>
-                <span class="reporter-method-output">Found Element By : By.xpath: //ul[@class='list-unstyled']//a[contains(text(),'Pay Bill')]</span>
-                <span class="reporter-method-output">Trying to click on: [[ChromeDriver: chrome on XP (10537e31b2af622ff2c9e709e8c73919)] -> xpath: //ul[@class='list-unstyled']//a[contains(text(),'Pay Bill')]]</span>
-                <span class="reporter-method-output">Clicked on: [[ChromeDriver: chrome on XP (10537e31b2af622ff2c9e709e8c73919)] -> xpath: //ul[@class='list-unstyled']//a[contains(text(),'Pay Bill')]]</span>
-                <span class="reporter-method-output">Clicked on Pay Bill Link</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">AccHistoryTest</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">-----------------------AccHistoryTest--------------</span>
-                <span class="reporter-method-output">Trying to find Element By : By.xpath: //ul[@class='nav nav-tabs']//a[contains(text(),'My Account')]</span>
-                <span class="reporter-method-output">Found Element By : By.xpath: //ul[@class='nav nav-tabs']//a[contains(text(),'My Account')]</span>
-                <span class="reporter-method-output">Trying to click on: [[ChromeDriver: chrome on XP (10537e31b2af622ff2c9e709e8c73919)] -> xpath: //ul[@class='nav nav-tabs']//a[contains(text(),'My Account')]]</span>
-                <span class="reporter-method-output">Exception occured: org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a title="..." data-subnav="1" aria-haspopup="true" role="menuitem">My Account</a> is not clickable at point (283, 212). Other element would receive the click: <div class="modal-backdrop fade"></div>
-  (Session info: chrome=79.0.3945.117)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'IDELIVER20-PC', ip: '10.4.64.163', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.117, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\Users\IDELIV~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53804}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 10537e31b2af622ff2c9e709e8c73919</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -432,23 +422,19 @@ Session ID: 10537e31b2af622ff2c9e709e8c73919</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">LoginTest</span>
-                <span class="method-start">63537 ms</span>
+                <span class="method-start">36702 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">AccHistoryTest</span>
-                <span class="method-start">109097 ms</span>
+                <span class="method-name">AccountHistoryTest</span>
+                <span class="method-start">72787 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">PayBillTest</span>
-                <span class="method-start">110037 ms</span>
+                <span class="method-start">114420 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">Flush</span>
-                <span class="method-start">124995 ms</span>
+                <span class="method-start">133975 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -6,16 +6,4 @@
       <class name="com.eversource.qa.testcases.LoginPageTest"/>
     </classes>
   </test> <!-- Default test -->
-  <test name="Default test(failed)">
-    <classes>
-      <class name="com.eversource.qa.testcases.LoginPageTest">
-        <methods>
-          <include name="PayBillTest"/>
-          <include name="AccHistoryTest"/>
-          <include name="Flush"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- com.eversource.qa.testcases.LoginPageTest -->
-    </classes>
-  </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

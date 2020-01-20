@@ -12,26 +12,30 @@ import com.eversource.qa.base.TestBase;
 
 public class Extent_reporter extends TestBase {
   static ExtentTest logger;
+  static ExtentTest parent_logger;
+  static ExtentTest child_logger;
+  static int Stepnumber=1;
   
 
 //Getting TestName
 	public static ExtentTest CreateRoportname(String Step_details,ExtentReports extent1){
 
-		logger = extent1.createTest(Step_details);
-		return logger;
+		parent_logger = extent1.createTest("Step - "+Stepnumber+" "+Step_details);
+		child_logger = parent_logger.createNode("Step - "+Stepnumber+".1 "+Step_details);
+		Stepnumber=Stepnumber+1;
+		return child_logger;
 		
 	}
 	
 	
 //Reporting for Pass & Fail Event 
 	public static void Report(String Status1,String Detail) throws Throwable{
-	
 		if(Status1.equalsIgnoreCase("PASS")){
-			logger.log(Status.PASS, Detail);
-			logger.addScreenCaptureFromPath(Gernric_functions.fScreenReport());
+			child_logger.log(Status.PASS, Detail);
+			child_logger.addScreenCaptureFromPath(Gernric_functions.fScreenReport());
 		}
 		else{
-			logger.log(Status.FAIL, Detail);
+			child_logger.log(Status.FAIL, Detail);
 			closeBrowser();
 		}
 }

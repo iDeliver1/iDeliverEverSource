@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/2/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>3/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Jan 14 22:04:41 IST 2020</td>
+<td>Started on:</td><td>Mon Jan 20 18:41:03 IST 2020</td>
 </tr>
-<tr><td>Total time:</td><td>127 seconds (127864 ms)</td>
+<tr><td>Total time:</td><td>135 seconds (135004 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,236 +67,6 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='com.eversource.qa.testcases.LoginPageTest.AccHistoryTest()'><b>AccHistoryTest</b><br>Test class: com.eversource.qa.testcases.LoginPageTest<br/>
-<a href="#Output-873993427" onClick='toggleBox("Output-873993427", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-873993427" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-873993427">
------------------------AccHistoryTest--------------<br/>
-Trying to find Element By : By.xpath: //ul[@class='nav nav-tabs']//a[contains(text(),'My Account')]<br/>
-Found Element By : By.xpath: //ul[@class='nav nav-tabs']//a[contains(text(),'My Account')]<br/>
-Trying to click on: [[ChromeDriver: chrome on XP (10537e31b2af622ff2c9e709e8c73919)] -> xpath: //ul[@class='nav nav-tabs']//a[contains(text(),'My Account')]]<br/>
-Exception occured: org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a title="..." data-subnav="1" aria-haspopup="true" role="menuitem">My Account</a> is not clickable at point (283, 212). Other element would receive the click: <div class="modal-backdrop fade"></div>
-  (Session info: chrome=79.0.3945.117)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'IDELIVER20-PC', ip: '10.4.64.163', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.117, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\Users\IDELIV~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53804}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 10537e31b2af622ff2c9e709e8c73919<br/>
-</div>
-</td>
-<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a title=&quot;...&quot; data-subnav=&quot;1&quot; aria-haspopup=&quot;true&quot; role=&quot;menuitem&quot;&gt;My Account&lt;/a&gt; is not clickable at point (283, 212). Other element would receive the click: &lt;div class=&quot;modal-backdrop fade&quot;&gt;&lt;/div&gt;
-  (Session info: chrome=79.0.3945.117)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;IDELIVER20-PC&apos;, ip: &apos;10.4.64.163&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_231&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.117, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\Users\IDELIV~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53804}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 10537e31b2af622ff2c9e709e8c73919
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:404)
-	at com.sun.proxy.$Proxy13.click(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:417)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy11.click(Unknown Source)
-	at com.eversource.qa.pages.HomePage.clickOnAccountsLink(HomePage.java:59)
-	at com.eversource.qa.testcases.LoginPageTest.AccHistoryTest(LoginPageTest.java:64)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:782)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
-</pre></div><a href='#' onClick='toggleBox("stack-trace873993427", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace873993427'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a title=&quot;...&quot; data-subnav=&quot;1&quot; aria-haspopup=&quot;true&quot; role=&quot;menuitem&quot;&gt;My Account&lt;/a&gt; is not clickable at point (283, 212). Other element would receive the click: &lt;div class=&quot;modal-backdrop fade&quot;&gt;&lt;/div&gt;
-  (Session info: chrome=79.0.3945.117)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;IDELIVER20-PC&apos;, ip: &apos;10.4.64.163&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_231&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.117, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\Users\IDELIV~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53804}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 10537e31b2af622ff2c9e709e8c73919
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:404)
-	at com.sun.proxy.$Proxy13.click(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:417)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy11.click(Unknown Source)
-	at com.eversource.qa.pages.HomePage.clickOnAccountsLink(HomePage.java:59)
-	at com.eversource.qa.testcases.LoginPageTest.AccHistoryTest(LoginPageTest.java:64)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:782)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
-</pre></div></td>
-<td>0</td>
-<td>com.eversource.qa.testcases.LoginPageTest@32eebfca</td></tr>
-<tr>
-<td title='com.eversource.qa.testcases.LoginPageTest.PayBillTest()'><b>PayBillTest</b><br>Test class: com.eversource.qa.testcases.LoginPageTest<br/>
-<a href="#Output-967576586" onClick='toggleBox("Output-967576586", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-967576586" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-967576586">
------------------------PayBillTest--------------<br/>
-Trying to find Element By : By.xpath: //ul[@class='nav nav-tabs']//a[contains(text(),'My Account')]<br/>
-Found Element By : By.xpath: //ul[@class='nav nav-tabs']//a[contains(text(),'My Account')]<br/>
-Trying to click on: [[ChromeDriver: chrome on XP (10537e31b2af622ff2c9e709e8c73919)] -> xpath: //ul[@class='nav nav-tabs']//a[contains(text(),'My Account')]]<br/>
-Clicked on: [[ChromeDriver: chrome on XP (10537e31b2af622ff2c9e709e8c73919)] -> xpath: //ul[@class='nav nav-tabs']//a[contains(text(),'My Account')]]<br/>
-Pay Bill<br/>
-Trying to find Element By : By.xpath: //ul[@class='list-unstyled']//a[contains(text(),'Pay Bill')]<br/>
-Found Element By : By.xpath: //ul[@class='list-unstyled']//a[contains(text(),'Pay Bill')]<br/>
-Trying to find Element By : By.xpath: //ul[@class='list-unstyled']//a[contains(text(),'Pay Bill')]<br/>
-Found Element By : By.xpath: //ul[@class='list-unstyled']//a[contains(text(),'Pay Bill')]<br/>
-Trying to click on: [[ChromeDriver: chrome on XP (10537e31b2af622ff2c9e709e8c73919)] -> xpath: //ul[@class='list-unstyled']//a[contains(text(),'Pay Bill')]]<br/>
-Clicked on: [[ChromeDriver: chrome on XP (10537e31b2af622ff2c9e709e8c73919)] -> xpath: //ul[@class='list-unstyled']//a[contains(text(),'Pay Bill')]]<br/>
-Clicked on Pay Bill Link<br/>
-</div>
-</td>
-<td><div><pre>java.lang.NullPointerException
-	at com.eversource.qa.util.Extent_reporter.Menuvalidation(Extent_reporter.java:67)
-	at com.eversource.qa.pages.EverSource_HeaderMenu.CheckHeaderMenu(EverSource_HeaderMenu.java:27)
-	at com.eversource.qa.pages.PayBill.createPayBill(PayBill.java:72)
-	at com.eversource.qa.testcases.LoginPageTest.PayBillTest(LoginPageTest.java:88)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:782)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
-</pre></div><a href='#' onClick='toggleBox("stack-trace967576586", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace967576586'><pre>java.lang.NullPointerException
-	at com.eversource.qa.util.Extent_reporter.Menuvalidation(Extent_reporter.java:67)
-	at com.eversource.qa.pages.EverSource_HeaderMenu.CheckHeaderMenu(EverSource_HeaderMenu.java:27)
-	at com.eversource.qa.pages.PayBill.createPayBill(PayBill.java:72)
-	at com.eversource.qa.testcases.LoginPageTest.PayBillTest(LoginPageTest.java:88)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:782)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
-</pre></div></td>
-<td>14</td>
-<td>com.eversource.qa.testcases.LoginPageTest@32eebfca</td></tr>
-</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -305,43 +75,187 @@ Clicked on Pay Bill Link<br/>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.eversource.qa.testcases.LoginPageTest.LoginTest()'><b>LoginTest</b><br>Test class: com.eversource.qa.testcases.LoginPageTest<br/>
-<a href="#Output-775081157" onClick='toggleBox("Output-775081157", this, "Show output", "Hide output");'>Show output</a>
+<td title='com.eversource.qa.testcases.LoginPageTest.AccountHistoryTest()'><b>AccountHistoryTest</b><br>Test class: com.eversource.qa.testcases.LoginPageTest<br/>
+<a href="#Output-337533935" onClick='toggleBox("Output-337533935", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-775081157" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-775081157">
+<a href="#Output-337533935" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-337533935">
+-----------------------AccountHistoryTest--------------<br/>
+Account History<br/>
+Trying to find Element By : By.xpath: //ul[@class='nav nav-tabs']//a[contains(text(),'My Account')]<br/>
+Found Element By : By.xpath: //ul[@class='nav nav-tabs']//a[contains(text(),'My Account')]<br/>
+Trying to find Element By : By.xpath: //ul[@class='nav nav-tabs']//a[contains(text(),'My Account')]<br/>
+Found Element By : By.xpath: //ul[@class='nav nav-tabs']//a[contains(text(),'My Account')]<br/>
+Trying to click on: [[ChromeDriver: chrome on XP (8a580b93f6845f5b4693642b287d0517)] -> xpath: //ul[@class='nav nav-tabs']//a[contains(text(),'My Account')]]<br/>
+Clicked on: [[ChromeDriver: chrome on XP (8a580b93f6845f5b4693642b287d0517)] -> xpath: //ul[@class='nav nav-tabs']//a[contains(text(),'My Account')]]<br/>
+Trying to find Element By : By.xpath: //ul[@class='list-unstyled']//a[contains(text(),'Account History')]<br/>
+Found Element By : By.xpath: //ul[@class='list-unstyled']//a[contains(text(),'Account History')]<br/>
+Trying to find Element By : By.xpath: //ul[@class='list-unstyled']//a[contains(text(),'Account History')]<br/>
+Found Element By : By.xpath: //ul[@class='list-unstyled']//a[contains(text(),'Account History')]<br/>
+Trying to click on: [[ChromeDriver: chrome on XP (8a580b93f6845f5b4693642b287d0517)] -> xpath: //ul[@class='list-unstyled']//a[contains(text(),'Account History')]]<br/>
+Clicked on: [[ChromeDriver: chrome on XP (8a580b93f6845f5b4693642b287d0517)] -> xpath: //ul[@class='list-unstyled']//a[contains(text(),'Account History')]]<br/>
+Clicked on Account History Link<br/>
+Trying to find Element By : By.xpath: //div[@class='header-top']<br/>
+Found Element By : By.xpath: //div[@class='header-top']<br/>
+Header TopMenu Validation is Visible <br/>
+Trying to find Element By : By.xpath: //div[@class='primary-nav-wrapper']<br/>
+Found Element By : By.xpath: //div[@class='primary-nav-wrapper']<br/>
+Header Menu Validation is Visible <br/>
+Trying to find Element By : By.xpath: //div[@id='divLeftNav']<br/>
+Found Element By : By.xpath: //div[@id='divLeftNav']<br/>
+Trying to find Element By : By.xpath: //div[@id='divLeftNav']<br/>
+Found Element By : By.xpath: //div[@id='divLeftNav']<br/>
+Side Menu Validation is Visible <br/>
+Trying to find Element By : By.xpath: //span[@class='filter-option pull-left'][contains(text(),'10010730041')]<br/>
+Found Element By : By.xpath: //span[@class='filter-option pull-left'][contains(text(),'10010730041')]<br/>
+Trying to find Element By : By.xpath: //span[@class='filter-option pull-left'][contains(text(),'10010730041')]<br/>
+Found Element By : By.xpath: //span[@class='filter-option pull-left'][contains(text(),'10010730041')]<br/>
+Trying to click on: [[ChromeDriver: chrome on XP (8a580b93f6845f5b4693642b287d0517)] -> xpath: //span[@class='filter-option pull-left'][contains(text(),'10010730041')]]<br/>
+Clicked on: [[ChromeDriver: chrome on XP (8a580b93f6845f5b4693642b287d0517)] -> xpath: //span[@class='filter-option pull-left'][contains(text(),'10010730041')]]<br/>
+Trying to find Element By : By.xpath: //div[@class='btn-group bootstrap-select form-control dropup open']//span[@class='text'][contains(text(),'ALL')]<br/>
+Found Element By : By.xpath: //div[@class='btn-group bootstrap-select form-control dropup open']//span[@class='text'][contains(text(),'ALL')]<br/>
+Trying to find Element By : By.xpath: //div[@class='btn-group bootstrap-select form-control dropup open']//span[@class='text'][contains(text(),'ALL')]<br/>
+Found Element By : By.xpath: //div[@class='btn-group bootstrap-select form-control dropup open']//span[@class='text'][contains(text(),'ALL')]<br/>
+Trying to click on: [[ChromeDriver: chrome on XP (8a580b93f6845f5b4693642b287d0517)] -> xpath: //div[@class='btn-group bootstrap-select form-control dropup open']//span[@class='text'][contains(text(),'ALL')]]<br/>
+Clicked on: [[ChromeDriver: chrome on XP (8a580b93f6845f5b4693642b287d0517)] -> xpath: //div[@class='btn-group bootstrap-select form-control dropup open']//span[@class='text'][contains(text(),'ALL')]]<br/>
+Trying to find Element By : By.xpath: //a[@id='main_lnkApply']<br/>
+Found Element By : By.xpath: //a[@id='main_lnkApply']<br/>
+Trying to click on: [[ChromeDriver: chrome on XP (8a580b93f6845f5b4693642b287d0517)] -> xpath: //a[@id='main_lnkApply']]<br/>
+Clicked on: [[ChromeDriver: chrome on XP (8a580b93f6845f5b4693642b287d0517)] -> xpath: //a[@id='main_lnkApply']]<br/>
+Trying to find Element By : By.xpath: //table[@id='payHistList']<br/>
+Found Element By : By.xpath: //table[@id='payHistList']<br/>
+Trying to find Element By : By.tagName: tr<br/>
+Found Element By : By.tagName: tr<br/>
+There is data<br/>
+</div>
+</td>
+<td></td>
+<td>41</td>
+<td>com.eversource.qa.testcases.LoginPageTest@1d371b2d</td></tr>
+<tr>
+<td title='com.eversource.qa.testcases.LoginPageTest.LoginTest()'><b>LoginTest</b><br>Test class: com.eversource.qa.testcases.LoginPageTest<br/>
+<a href="#Output-693958407" onClick='toggleBox("Output-693958407", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-693958407" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-693958407">
 -----------------------LoginTest--------------<br/>
 Trying to find Element By : By.xpath: //div[@id='RegionSelectorModal']//div[@class='modal-dialog']//div[@class='modal-content col-xs-12 col-sm-10 col-sm-offset-1 col-md-12 col-md-offset-0']//div[@class='modal-body']<br/>
 Found Element By : By.xpath: //div[@id='RegionSelectorModal']//div[@class='modal-dialog']//div[@class='modal-content col-xs-12 col-sm-10 col-sm-offset-1 col-md-12 col-md-offset-0']//div[@class='modal-body']<br/>
 Trying to find Element By : By.xpath: //div[@id='map']//a[contains(text(),'New Hampshire')]<br/>
 Found Element By : By.xpath: //div[@id='map']//a[contains(text(),'New Hampshire')]<br/>
-Trying to click on: [[ChromeDriver: chrome on XP (10537e31b2af622ff2c9e709e8c73919)] -> xpath: //div[@id='map']//a[contains(text(),'New Hampshire')]]<br/>
-Clicked on: [[ChromeDriver: chrome on XP (10537e31b2af622ff2c9e709e8c73919)] -> xpath: //div[@id='map']//a[contains(text(),'New Hampshire')]]<br/>
+Trying to click on: [[ChromeDriver: chrome on XP (8a580b93f6845f5b4693642b287d0517)] -> xpath: //div[@id='map']//a[contains(text(),'New Hampshire')]]<br/>
+Clicked on: [[ChromeDriver: chrome on XP (8a580b93f6845f5b4693642b287d0517)] -> xpath: //div[@id='map']//a[contains(text(),'New Hampshire')]]<br/>
 Clicked on New Hampshire Link<br/>
 Logging testing with username - perftest1<br/>
 Logging testing with password - #Eversource1<br/>
+Trying to find Element By : By.xpath: //input[@id='Main_Login_txtUserName']<br/>
+Found Element By : By.xpath: //input[@id='Main_Login_txtUserName']<br/>
 Trying to find Element By : By.xpath: //input[@id='Main_Login_txtUserName']<br/>
 Found Element By : By.xpath: //input[@id='Main_Login_txtUserName']<br/>
 Trying to find Element By : By.xpath: //input[@id='Main_Login_txtPassword']<br/>
 Found Element By : By.xpath: //input[@id='Main_Login_txtPassword']<br/>
 Trying to find Element By : By.xpath: //input[@id='Main_Login_btnLoginEnter']<br/>
 Found Element By : By.xpath: //input[@id='Main_Login_btnLoginEnter']<br/>
-Trying to click on: [[ChromeDriver: chrome on XP (10537e31b2af622ff2c9e709e8c73919)] -> xpath: //input[@id='Main_Login_btnLoginEnter']]<br/>
-Clicked on: [[ChromeDriver: chrome on XP (10537e31b2af622ff2c9e709e8c73919)] -> xpath: //input[@id='Main_Login_btnLoginEnter']]<br/>
+Trying to click on: [[ChromeDriver: chrome on XP (8a580b93f6845f5b4693642b287d0517)] -> xpath: //input[@id='Main_Login_btnLoginEnter']]<br/>
+Clicked on: [[ChromeDriver: chrome on XP (8a580b93f6845f5b4693642b287d0517)] -> xpath: //input[@id='Main_Login_btnLoginEnter']]<br/>
 Trying to find Element By : By.xpath: //div[@id='promotion-modal']//span[contains(text(),'×')]<br/>
 Found Element By : By.xpath: //div[@id='promotion-modal']//span[contains(text(),'×')]<br/>
 Trying to find Element By : By.xpath: //div[@id='promotion-modal']//span[contains(text(),'×')]<br/>
 Found Element By : By.xpath: //div[@id='promotion-modal']//span[contains(text(),'×')]<br/>
-Trying to click on: [[ChromeDriver: chrome on XP (10537e31b2af622ff2c9e709e8c73919)] -> xpath: //div[@id='promotion-modal']//span[contains(text(),'×')]]<br/>
-Clicked on: [[ChromeDriver: chrome on XP (10537e31b2af622ff2c9e709e8c73919)] -> xpath: //div[@id='promotion-modal']//span[contains(text(),'×')]]<br/>
+Trying to find Element By : By.xpath: //div[@id='promotion-modal']//span[contains(text(),'×')]<br/>
+Found Element By : By.xpath: //div[@id='promotion-modal']//span[contains(text(),'×')]<br/>
+Trying to click on: [[ChromeDriver: chrome on XP (8a580b93f6845f5b4693642b287d0517)] -> xpath: //div[@id='promotion-modal']//span[contains(text(),'×')]]<br/>
+Clicked on: [[ChromeDriver: chrome on XP (8a580b93f6845f5b4693642b287d0517)] -> xpath: //div[@id='promotion-modal']//span[contains(text(),'×')]]<br/>
+Trying to find Element By : By.xpath: //div[@class='header-top']<br/>
+Found Element By : By.xpath: //div[@class='header-top']<br/>
+Header TopMenu Validation is Visible <br/>
+Trying to find Element By : By.xpath: //div[@class='primary-nav-wrapper']<br/>
+Found Element By : By.xpath: //div[@class='primary-nav-wrapper']<br/>
+Header Menu Validation is Visible <br/>
 Trying to find Element By : By.xpath: //div[@class='col-sm-6 col-xs-8']//img[@class='logo img-responsive']<br/>
 Found Element By : By.xpath: //div[@class='col-sm-6 col-xs-8']//img[@class='logo img-responsive']<br/>
 Successful logging with username -  perftest1<br/>
 </div>
 </td>
 <td></td>
-<td>45</td>
-<td>com.eversource.qa.testcases.LoginPageTest@32eebfca</td></tr>
+<td>36</td>
+<td>com.eversource.qa.testcases.LoginPageTest@1d371b2d</td></tr>
+<tr>
+<td title='com.eversource.qa.testcases.LoginPageTest.PayBillTest()'><b>PayBillTest</b><br>Test class: com.eversource.qa.testcases.LoginPageTest<br/>
+<a href="#Output-1152606315" onClick='toggleBox("Output-1152606315", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1152606315" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1152606315">
+-----------------------PayBillTest--------------<br/>
+Pay Bill<br/>
+Trying to find Element By : By.xpath: //ul[@class='nav nav-tabs']//a[contains(text(),'My Account')]<br/>
+Found Element By : By.xpath: //ul[@class='nav nav-tabs']//a[contains(text(),'My Account')]<br/>
+Trying to find Element By : By.xpath: //ul[@class='nav nav-tabs']//a[contains(text(),'My Account')]<br/>
+Found Element By : By.xpath: //ul[@class='nav nav-tabs']//a[contains(text(),'My Account')]<br/>
+Trying to click on: [[ChromeDriver: chrome on XP (8a580b93f6845f5b4693642b287d0517)] -> xpath: //ul[@class='nav nav-tabs']//a[contains(text(),'My Account')]]<br/>
+Clicked on: [[ChromeDriver: chrome on XP (8a580b93f6845f5b4693642b287d0517)] -> xpath: //ul[@class='nav nav-tabs']//a[contains(text(),'My Account')]]<br/>
+Trying to find Element By : By.xpath: //ul[@class='list-unstyled']//a[contains(text(),'Pay Bill')]<br/>
+Found Element By : By.xpath: //ul[@class='list-unstyled']//a[contains(text(),'Pay Bill')]<br/>
+Trying to find Element By : By.xpath: //ul[@class='list-unstyled']//a[contains(text(),'Pay Bill')]<br/>
+Found Element By : By.xpath: //ul[@class='list-unstyled']//a[contains(text(),'Pay Bill')]<br/>
+Trying to click on: [[ChromeDriver: chrome on XP (8a580b93f6845f5b4693642b287d0517)] -> xpath: //ul[@class='list-unstyled']//a[contains(text(),'Pay Bill')]]<br/>
+Clicked on: [[ChromeDriver: chrome on XP (8a580b93f6845f5b4693642b287d0517)] -> xpath: //ul[@class='list-unstyled']//a[contains(text(),'Pay Bill')]]<br/>
+Clicked on Pay Bill Link<br/>
+Trying to find Element By : By.xpath: //div[@class='header-top']<br/>
+Found Element By : By.xpath: //div[@class='header-top']<br/>
+Header TopMenu Validation is Visible <br/>
+Trying to find Element By : By.xpath: //div[@class='primary-nav-wrapper']<br/>
+Found Element By : By.xpath: //div[@class='primary-nav-wrapper']<br/>
+Header Menu Validation is Visible <br/>
+Trying to find Element By : By.xpath: //span[@id='main_lblNickName']<br/>
+Found Element By : By.xpath: //span[@id='main_lblNickName']<br/>
+Trying to find Element By : By.xpath:  //span[@id='main_lblAccountNo']<br/>
+Found Element By : By.xpath:  //span[@id='main_lblAccountNo']<br/>
+Account Number is 10010730041<br/>
+Trying to find Element By : By.xpath: //span[@class='filter-option pull-left'][contains(text(),'Select Bank Account')]<br/>
+Found Element By : By.xpath: //span[@class='filter-option pull-left'][contains(text(),'Select Bank Account')]<br/>
+Trying to click on: [[ChromeDriver: chrome on XP (8a580b93f6845f5b4693642b287d0517)] -> xpath: //span[@class='filter-option pull-left'][contains(text(),'Select Bank Account')]]<br/>
+Clicked on: [[ChromeDriver: chrome on XP (8a580b93f6845f5b4693642b287d0517)] -> xpath: //span[@class='filter-option pull-left'][contains(text(),'Select Bank Account')]]<br/>
+Trying to find Element By : By.xpath:   //div[@class='btn-group bootstrap-select form-control open']//li[2]//a[1]<br/>
+Found Element By : By.xpath:   //div[@class='btn-group bootstrap-select form-control open']//li[2]//a[1]<br/>
+Trying to click on: [[ChromeDriver: chrome on XP (8a580b93f6845f5b4693642b287d0517)] -> xpath:   //div[@class='btn-group bootstrap-select form-control open']//li[2]//a[1]]<br/>
+Clicked on: [[ChromeDriver: chrome on XP (8a580b93f6845f5b4693642b287d0517)] -> xpath:   //div[@class='btn-group bootstrap-select form-control open']//li[2]//a[1]]<br/>
+Clicked on Aron Payment Method<br/>
+Trying to find Element By : By.xpath:  //span[@id='main_lblAmountDue']<br/>
+Found Element By : By.xpath:  //span[@id='main_lblAmountDue']<br/>
+Trying to find Element By : By.xpath:   //label[contains(text(),'Amount Due:')]<br/>
+Found Element By : By.xpath:   //label[contains(text(),'Amount Due:')]<br/>
+Trying to click on: [[ChromeDriver: chrome on XP (8a580b93f6845f5b4693642b287d0517)] -> xpath:   //label[contains(text(),'Amount Due:')]]<br/>
+Clicked on: [[ChromeDriver: chrome on XP (8a580b93f6845f5b4693642b287d0517)] -> xpath:   //label[contains(text(),'Amount Due:')]]<br/>
+Trying to find Element By : By.xpath: //label[contains(text(),'Pay Now')]<br/>
+Found Element By : By.xpath: //label[contains(text(),'Pay Now')]<br/>
+Trying to click on: [[ChromeDriver: chrome on XP (8a580b93f6845f5b4693642b287d0517)] -> xpath: //label[contains(text(),'Pay Now')]]<br/>
+Clicked on: [[ChromeDriver: chrome on XP (8a580b93f6845f5b4693642b287d0517)] -> xpath: //label[contains(text(),'Pay Now')]]<br/>
+Trying to find Element By : By.xpath: //span[@id='main_lblPayASAP']<br/>
+Found Element By : By.xpath: //span[@id='main_lblPayASAP']<br/>
+Trying to find Element By : By.xpath:  //span[@id='main_lblDueDate']<br/>
+Found Element By : By.xpath:  //span[@id='main_lblDueDate']<br/>
+Trying to find Element By : By.xpath: //a[@id='main_btnConfirm']<br/>
+Found Element By : By.xpath: //a[@id='main_btnConfirm']<br/>
+Trying to click on: [[ChromeDriver: chrome on XP (8a580b93f6845f5b4693642b287d0517)] -> xpath: //a[@id='main_btnConfirm']]<br/>
+Clicked on: [[ChromeDriver: chrome on XP (8a580b93f6845f5b4693642b287d0517)] -> xpath: //a[@id='main_btnConfirm']]<br/>
+Trying to find Element By : By.xpath: //td[@class='tdAccountNumber']<br/>
+Found Element By : By.xpath: //td[@class='tdAccountNumber']<br/>
+Account Number Validation      10010730041 is equal to 10010730041<br/>
+Trying to find Element By : By.xpath:  //td[@class='tdDueDate']<br/>
+Found Element By : By.xpath:  //td[@class='tdDueDate']<br/>
+Due Date Validation      10/09/2018 is equal to 10/09/2018<br/>
+Trying to find Element By : By.xpath:  //td[@class='tdPaymentAmount']<br/>
+Found Element By : By.xpath:  //td[@class='tdPaymentAmount']<br/>
+Amount Price Vaildation      $8,760.60 is equal to $8,760.60<br/>
+Trying to find Element By : By.xpath: //td[@class='tdPaymentDate']<br/>
+Found Element By : By.xpath: //td[@class='tdPaymentDate']<br/>
+Actual Date Validation      01/20/2020 is equal to 01/20/2020<br/>
+</div>
+</td>
+<td></td>
+<td>19</td>
+<td>com.eversource.qa.testcases.LoginPageTest@1d371b2d</td></tr>
 </table><p>
 </body>
 </html>

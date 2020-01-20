@@ -1,10 +1,10 @@
 package com.eversource.qa.testcases;
 
 
+
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-
 import com.eversource.qa.base.TestBase;
 import com.eversource.qa.pages.AccountHistory;
 import com.eversource.qa.pages.HomePage;
@@ -21,10 +21,7 @@ public class LoginPageTest extends TestBase{
 	String CampName,Account,OrderNo,Contract;
 	RegionPage Area;
 	PayBill paybill;
-	AccountHistory acchis;
-	/*public LoginPageTest(){
-		super();
-	}*/
+	AccountHistory AccountHis;
 	
 	//Initializing
 	@BeforeTest
@@ -33,7 +30,7 @@ public class LoginPageTest extends TestBase{
 		loginPage = new LoginPage();
 		Area = new RegionPage();
 		paybill = new PayBill();
-		acchis = new AccountHistory();
+		AccountHis = new AccountHistory();
 	}
 	
 	
@@ -44,18 +41,15 @@ public class LoginPageTest extends TestBase{
 		
 		getReportname(new Object(){}.getClass().getEnclosingMethod().getName());
 		
+		//Selecting Region
 		Area.SelectRegion("New Hampshire");
 		
 		homepage = loginPage.login(prop.getProperty("username"), prop.getProperty("password"));	
-		
-		
-		
-		//Extent_reporter.validation("Login Page Validation",homepage.validateHomePageTitle(), "Home Page ~ Salesforce - Developer Edition");
 	}
 	
-	
+	//Account History Test
 	@Test(priority=2)
-	public void AccHistoryTest()throws Throwable{
+	public void AccountHistoryTest()throws Throwable{
 		
 		log("-----------------------"+new Object(){}.getClass().getEnclosingMethod().getName()+"--------------");
 		
@@ -63,19 +57,10 @@ public class LoginPageTest extends TestBase{
 		
 		 HomePage.clickOnAccountsLink("Account History");
 		
-		
-		
-		acchis.CheckMenu();
-		
-		//verify page title
-		
-		//vrify web element
-		
-		//verify account
-		
+		 AccountHis.AccountHistoryTab();
 	}
 	
-	
+	//Pay Bill Test
 	@Test(priority=3)
 	public void PayBillTest()throws Throwable{
 		
@@ -85,13 +70,11 @@ public class LoginPageTest extends TestBase{
 		
 		HomePage.clickOnAccountsLink("Pay Bill");
 		
-		paybill.createPayBill("Aron");
+		
+		paybill.PayBillTab("Aron");
 		
 	}
-	
-	
-	
-	
+
 	//Closing Browser and saving report 
 	@AfterTest
 	public void Flush()

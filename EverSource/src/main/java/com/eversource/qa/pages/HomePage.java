@@ -1,6 +1,8 @@
 package com.eversource.qa.pages;
 
 
+import java.util.List;
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -30,9 +32,13 @@ public class HomePage extends TestBase{
 	static 	WebElement AccHisLink;
 	
 	@FindBy(xpath= "//ul[@class='nav nav-tabs']//a[contains(text(),'My Account')]")
+				
 	static 	WebElement AccountsLink;
 	
-
+	@FindBy(xpath= "//ul[@class='nav nav-tabs']//a[contains(text(),'My Account')]")
+	static 	List<WebElement> checklist ;
+	
+	static EverSource_HeaderMenu objcheck;
 	
 	@FindBy(xpath= "//a[contains(text(),'Logout')]")
 	WebElement LogoutLink;
@@ -42,6 +48,7 @@ public class HomePage extends TestBase{
 			public HomePage(){
 				super();
 				PageFactory.initElements(driver, this);
+				objcheck = new EverSource_HeaderMenu();
 			}
 			
 			//Actions:
@@ -55,32 +62,36 @@ public class HomePage extends TestBase{
 			
 		
 			
-			public static void clickOnAccountsLink(String regionName ) throws InterruptedException{
-				AccountsLink.click();
+			public static void clickOnAccountsLink(String regionName ) throws Throwable{
+
 				log(regionName);
+		
+				Thread.sleep(5000);
+				WaitForObject(AccountsLink,"Click");
 				
 				   //Switch expression  
 				   switch(regionName){  
 				   //Case statements  
+				   
 				   case "Account Overview":
-					   waitforElement(20, AccountOverview);
+					  
 					   AccountOverview.click();
 					   log("Clicked on Account Overview");
 					   break;
 				   case "Pay Bill": 
-					   waitforElement(20, Paybill);
-					   Paybill.click();
-					   log("Clicked on Pay Bill Link");  
+					   WaitForObject(Paybill,"Click");
+					   log("Clicked on Pay Bill Link"); 
+					   objcheck.CheckHeaderMenu();
 					   break;
 				   case "View Bill": 
-					   waitforElement(20, Viewbill);
 					   Viewbill.click();
 					   log("Clicked on View Bill Link");
 					   break;
 				   case "Account History": 
-					   waitforElement(20, AccHisLink);
-					   AccHisLink.click();
+					   WaitForObject(AccHisLink,"Click");
 					   log("Clicked on Account History Link");
+					   objcheck.CheckHeaderMenu();
+					   objcheck.CheckSideMenu();
 					   break;
 				   //Default case statement  
 				   default:log("Not link found"); 
