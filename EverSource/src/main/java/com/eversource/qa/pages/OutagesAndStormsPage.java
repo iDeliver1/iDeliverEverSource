@@ -18,7 +18,12 @@ public class OutagesAndStormsPage extends TestBase {
 	WebElement AccountField;
 	
 	@FindBy(xpath="//div[@class='col-sm-3 hidden-xs text-center-responsive']//a[@id='btnBillingAccount']")
+	
 	WebElement GoButton;
+	
+	@FindBy(xpath="//div[@class='col-sm-3 hidden-xs text-center-responsive']//a[contains(@class,'btn-default disabled')]")
+	WebElement DisableGoButton;
+	
 	
 	@FindBy(xpath="//div[@id='dv-ServiceAddress']")
 	WebElement Address;
@@ -45,27 +50,31 @@ public class OutagesAndStormsPage extends TestBase {
 		
 		OutageStorm.click();
 		ReportCheckOutage.click();
-		AccountField.click();
+	
 		AccountField.click();
 		AccountField.sendKeys("10730101077");
 	
-		if (isClickable(GoButton))
-		{
-			System.out.println("Clickable? " + GoButton.isEnabled());
-			GoButton.click();
-		}else{
+	
+	
+		try{
+			DisableGoButton.isEnabled();
 			AccountField.clear();
 			AccountField.sendKeys("10730101077");
 			GoButton.click();
-		}
+		}catch(Exception e){
 			
-		
+		}
 		GoButton.click();
 		ReportOutage.click();
-		NeighborsOut.click();
-		CancelButton.click();
 		Extent_reporter.Menuvalidation("AddressDisplayed", Address);
 		
+		Thread.sleep(5000);
+		NeighborsOut.click();
+		CancelButton.click();
+		
+		
+		
+		driver.close();
 	}
 	
 }

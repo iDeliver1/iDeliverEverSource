@@ -29,7 +29,7 @@ import com.google.common.base.Function;
 public class TestBase  {
 	public static final Logger log = Logger.getLogger(TestBase.class.getName());
 	private static final Duration DEFAULT_WAIT_POLLING = Duration.ofSeconds(1);
-	private static final Duration DEFAULT_WAIT_DURATION = Duration.ofSeconds(50);
+	private static final Duration DEFAULT_WAIT_DURATION = Duration.ofSeconds(20);
 	public static WebDriver driver;
 	public static WebDriver yopdriver;
 	public static Properties prop;
@@ -65,19 +65,23 @@ public class TestBase  {
 			       extent.attachReporter(htmlReporter);
 			       extent.setSystemInfo("OS", "OS");
 			       extent.setSystemInfo("Browser", "browser");
+			       
 			       //htmlReporter.config().setChartVisibilityOnOpen(true);
 			       htmlReporter.config().setDocumentTitle("Extent Report Demo");
 			       htmlReporter.config().setReportName("Test Report");
 			       //htmlReporter.config().setTestViewChartLocation(CharacterSection.TOP);
 			       htmlReporter.config().setTheme(Theme.STANDARD);
+			       
 			      
 			}
 
 	//Initiating  Browser 
-	public static void initialization(){
+	public static void initialization() throws Throwable{
+		getParentReportname("EV_Launching");
 		String browserName = prop.getProperty("browser");
 		
 		if(browserName.equals("chrome")){
+			getChildReportname("Verify User is able to launch Eversource Page or not");
 			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/src/main/java/com/eversource/qa/driver/chromedriver.exe");
 			driver = new ChromeDriver(); 
 		}
@@ -96,6 +100,8 @@ public class TestBase  {
 		driver.manage().timeouts().pageLoadTimeout(TestUtil.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT, TimeUnit.SECONDS);		
 		driver.get(prop.getProperty("url"));
+		
+		Extent_reporter.validation( driver.getTitle(), "Eversource | Residential");
 	
 		
 }
@@ -108,15 +114,26 @@ public class TestBase  {
 	
 	
 	//Getting TestName
-	public void getReportname(String Reportname){
+	public static void getReportname(String Reportname){
 		Extent_reporter.CreateRoportname(Reportname,extent);
 	}
 	
+	public static void getParentReportname(String Reportname){
+		Extent_reporter.CreateParentRoportname(Reportname,extent);
+	}
+	
+	public static void getChildReportname(String Reportname){
+		Extent_reporter.CreateChildRoportname(Reportname,extent);
+	}
+	
+	
+	
 	//Creating Report 
-	public void Reporting(String Status,String StepName) throws Throwable{
-		Extent_reporter.Report(Status, StepName);
+	public static void Reporting(String Status,String ActualStep,String ExpectedStep) throws Throwable{
+		Extent_reporter.Report(Status, ActualStep,ExpectedStep);
 		
 	}
+	
 	
 	//Explicit Wait
 	public static  void waitforElement(long timeoutseconds, WebElement element) {
@@ -135,8 +152,8 @@ public class TestBase  {
 	//Fluent Wait for an Element for event for clicking or checking
 	public static void WaitForObject(  final WebElement element,String EventName) throws InterruptedException{
 		Wait<WebDriver> wait = new FluentWait<WebDriver> (driver)
-		   .withTimeout(DEFAULT_WAIT_POLLING)
-		   .pollingEvery(DEFAULT_WAIT_DURATION)
+		   .withTimeout(DEFAULT_WAIT_DURATION)
+		   .pollingEvery(DEFAULT_WAIT_POLLING)
 		   .ignoring(NoSuchElementException.class);
 	
 		 WebElement foo = wait.until(new Function<WebDriver, WebElement>() { 
@@ -155,6 +172,10 @@ public class TestBase  {
 			
 		}
 	}
+	
+	 public static int getRandomInteger(){
+	        return ((int) (Math.random()*(5 - 1))) + 1;
+	    }
 	
 	public static boolean isClickable(WebElement el) 
 	{

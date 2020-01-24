@@ -12,7 +12,7 @@ public class OutageStormTest extends TestBase {
 	RegionPage Area;
 	
 	@BeforeTest
-	public void setup()
+	public void setup() throws Throwable
 	{
 		initialization();
 		OutagePage = new OutagesAndStormsPage();	
@@ -25,7 +25,7 @@ public class OutageStormTest extends TestBase {
 		log("-----------------------"+new Object(){}.getClass().getEnclosingMethod().getName()+"--------------");
 		getReportname(new Object(){}.getClass().getEnclosingMethod().getName());
 		
-		Area.SelectRegion("New Hampshire");
+		Area.SelectRegion();
 		
 		OutagePage.OutageStorm();
 		

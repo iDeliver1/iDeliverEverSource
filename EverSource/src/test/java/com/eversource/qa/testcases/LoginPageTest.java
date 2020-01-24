@@ -1,17 +1,16 @@
 package com.eversource.qa.testcases;
 
 
-
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
+
 import com.eversource.qa.base.TestBase;
 import com.eversource.qa.pages.AccountHistory;
 import com.eversource.qa.pages.HomePage;
 import com.eversource.qa.pages.LoginPage;
 import com.eversource.qa.pages.PayBill;
 import com.eversource.qa.pages.RegionPage;
-
 
 
 public class LoginPageTest extends TestBase{
@@ -25,7 +24,9 @@ public class LoginPageTest extends TestBase{
 	
 	//Initializing
 	@BeforeTest
-	public void setUp(){
+	public void setUp() throws Throwable{
+		getReportname("EV_Validation");
+		
 		initialization();
 		loginPage = new LoginPage();
 		Area = new RegionPage();
@@ -37,12 +38,12 @@ public class LoginPageTest extends TestBase{
 	//Login Test
 	@Test(priority=1)
 	public void LoginTest() throws Throwable{
-		log("-----------------------"+new Object(){}.getClass().getEnclosingMethod().getName()+"--------------");
+		log("----------------------- EV_Login_Validation -------------");
 		
-		getReportname(new Object(){}.getClass().getEnclosingMethod().getName());
+		getParentReportname("EV_Login_Validation");
 		
 		//Selecting Region
-		Area.SelectRegion("New Hampshire");
+		Area.SelectRegion();
 		
 		homepage = loginPage.login(prop.getProperty("username"), prop.getProperty("password"));	
 	}
@@ -51,9 +52,9 @@ public class LoginPageTest extends TestBase{
 	@Test(priority=2)
 	public void AccountHistoryTest()throws Throwable{
 		
-		log("-----------------------"+new Object(){}.getClass().getEnclosingMethod().getName()+"--------------");
+		log("----------------------- EV_Account_History_Tab_Validation --------------");
 		
-		getReportname(new Object(){}.getClass().getEnclosingMethod().getName());
+		getParentReportname("EV_Account_History_Tab_Validation");
 		
 		 HomePage.clickOnAccountsLink("Account History");
 		
@@ -64,9 +65,9 @@ public class LoginPageTest extends TestBase{
 	@Test(priority=3)
 	public void PayBillTest()throws Throwable{
 		
-		log("-----------------------"+new Object(){}.getClass().getEnclosingMethod().getName()+"--------------");
+		log("----------------------- EV_Pay_Bill_Tab_Validation --------------");
 		
-		getReportname(new Object(){}.getClass().getEnclosingMethod().getName());
+		getParentReportname("EV_Pay_Bill_Tab_Validation");
 		
 		HomePage.clickOnAccountsLink("Pay Bill");
 		

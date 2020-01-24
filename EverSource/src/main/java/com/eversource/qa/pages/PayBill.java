@@ -124,16 +124,20 @@ public class PayBill extends TestBase {
 		   Submit.click();
 		   
 		   //Validation for Account Number equals or not
-		   Extent_reporter.Argvalidation("Account Number Validation",AccNo, AccountNumber1.getText());
+		   getChildReportname(" Account Number Validation");
+		   Extent_reporter.Argvalidation("Account Number ",AccNo, AccountNumber1.getText());
 		   
 		 //Validation for Due Date equals or not
-		   Extent_reporter.Argvalidation("Due Date Validation",DDate, DueDate1.getText());
+		   getChildReportname("Due Date Validation");
+		   Extent_reporter.Argvalidation("Due Date ",DDate, DueDate1.getText());
 		   
 		 //Validation for Amount Price equals or not
-		   Extent_reporter.Argvalidation("Amount Price Vaildation",AmtPri, AmountPrice1.getText());
+		   getChildReportname(" Amount Price Validation");
+		   Extent_reporter.Argvalidation("Amount Price ",AmtPri, AmountPrice1.getText());
 		   
 		 //Validation for Actual Date equals or not
-		   Extent_reporter.Argvalidation("Actual Date Validation",AccDate, ActualDate1.getText());
+		   getChildReportname(" Actual Date Validation");
+		   Extent_reporter.Argvalidation("Actual Date ",AccDate, ActualDate1.getText());
 		
 		
 		

@@ -56,24 +56,26 @@ public class RegionPage  extends TestBase {
 		
 	}
 
-		public LoginPage SelectRegion(String regionName){
+		public LoginPage SelectRegion(){
 
 			try{
 				EverSourceMap.isDisplayed();
 			}catch(Exception e){
 				
 			}
-		regionName = regionName.toLowerCase();
+			int regionnumber = getRandomInteger();
+	
+			
 		   //Switch expression  
-		   switch(regionName){  
+		   switch(regionnumber){  
 		   //Case statements  
-		   case "new hampshire": new_hampshire_link.click();log("Clicked on New Hampshire Link");
+		   case 1: new_hampshire_link.click();log("Clicked on New Hampshire Link");
 		   break;  
-		   case "western massachusetts": western_massachusetts.click();log("Clicked on western massachusetts Link");  
+		   case 2: western_massachusetts.click();log("Clicked on western massachusetts Link");  
 		   break;  
-		   case "connecticut": connecticut.click(); log("Clicked on connecticut Link");
+		   case 3: connecticut.click(); log("Clicked on connecticut Link");
 		   break;
-		   case "eastern massachusetts": eastern_massachusetts.click(); log("Clicked eastern massachusetts Link");
+		   case 4: eastern_massachusetts.click(); log("Clicked eastern massachusetts Link");
 		   break;
 		   //Default case statement  
 		   default:log("Not region found");  

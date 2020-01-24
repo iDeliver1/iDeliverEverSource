@@ -5,8 +5,8 @@ package com.eversource.qa.pages;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.WebElement;
-
 import com.eversource.qa.base.TestBase;
+
 
 
 public class LoginPage extends TestBase {
@@ -48,15 +48,17 @@ public class LoginPage extends TestBase {
 		
 		public HomePage login(String usr, String pwd) throws Throwable 
 		{
-		
-					
-			
+	
 			log("Logging testing with username - "+usr);
 			log("Logging testing with password - "+pwd);
+			
+			
 			
 			waitforElement(10,Username);
 			Username.sendKeys(usr);
 			Password.sendKeys(pwd);
+			
+			
 			Signin.click();	
 			
 			try{
@@ -67,19 +69,19 @@ public class LoginPage extends TestBase {
 			}
 			
 			DialogueClose.click();
-			
+			getChildReportname(" Menu Validation");
 			objcheck.CheckHeaderMenu();
 			
-			
+			getChildReportname(" Username & Password Validation");
 			if(validateSalesForceLogo()){
 		
 				log("Successful logging with username -  "+usr);
-				Reporting("Pass", "Login Validation");
+				Reporting("Pass", "Logged in Successful with entered Username "+usr+" & password "+pwd, "User Should be able to login with Username "+usr+" & password "+pwd);
 				
 				return new HomePage();
 
 			}else{
-				Reporting("Fail", "Logged n Failed");
+				Reporting("FAIL", "Logged in Failed with entered Username"+usr+" & password"+pwd, "User Should be able to login with Username"+usr+" & password"+pwd);
 				return new HomePage();
 			}
 			//return new HomePage();

@@ -2,34 +2,10 @@
 <testng-results skipped="0" failed="0" total="3" passed="3">
   <reporter-output>
     <line>
-      <![CDATA[Before navigating to: 'https://pat.eversource.us/']]>
+      <![CDATA[----------------------- EV_Login_Validation -------------]]>
     </line>
     <line>
-      <![CDATA[Navigated to:'https://pat.eversource.us/']]>
-    </line>
-    <line>
-      <![CDATA[-----------------------LoginTest--------------]]>
-    </line>
-    <line>
-      <![CDATA[Trying to find Element By : By.xpath: //div[@id='RegionSelectorModal']//div[@class='modal-dialog']//div[@class='modal-content col-xs-12 col-sm-10 col-sm-offset-1 col-md-12 col-md-offset-0']//div[@class='modal-body']]]>
-    </line>
-    <line>
-      <![CDATA[Found Element By : By.xpath: //div[@id='RegionSelectorModal']//div[@class='modal-dialog']//div[@class='modal-content col-xs-12 col-sm-10 col-sm-offset-1 col-md-12 col-md-offset-0']//div[@class='modal-body']]]>
-    </line>
-    <line>
-      <![CDATA[Trying to find Element By : By.xpath: //div[@id='map']//a[contains(text(),'New Hampshire')]]]>
-    </line>
-    <line>
-      <![CDATA[Found Element By : By.xpath: //div[@id='map']//a[contains(text(),'New Hampshire')]]]>
-    </line>
-    <line>
-      <![CDATA[Trying to click on: [[ChromeDriver: chrome on XP (8a580b93f6845f5b4693642b287d0517)] -> xpath: //div[@id='map']//a[contains(text(),'New Hampshire')]]]]>
-    </line>
-    <line>
-      <![CDATA[Clicked on: [[ChromeDriver: chrome on XP (8a580b93f6845f5b4693642b287d0517)] -> xpath: //div[@id='map']//a[contains(text(),'New Hampshire')]]]]>
-    </line>
-    <line>
-      <![CDATA[Clicked on New Hampshire Link]]>
+      <![CDATA[Clicked on connecticut Link]]>
     </line>
     <line>
       <![CDATA[Logging testing with username - perftest1]]>
@@ -38,463 +14,85 @@
       <![CDATA[Logging testing with password - #Eversource1]]>
     </line>
     <line>
-      <![CDATA[Trying to find Element By : By.xpath: //input[@id='Main_Login_txtUserName']]]>
-    </line>
-    <line>
-      <![CDATA[Found Element By : By.xpath: //input[@id='Main_Login_txtUserName']]]>
-    </line>
-    <line>
-      <![CDATA[Trying to find Element By : By.xpath: //input[@id='Main_Login_txtUserName']]]>
-    </line>
-    <line>
-      <![CDATA[Found Element By : By.xpath: //input[@id='Main_Login_txtUserName']]]>
-    </line>
-    <line>
-      <![CDATA[Trying to find Element By : By.xpath: //input[@id='Main_Login_txtPassword']]]>
-    </line>
-    <line>
-      <![CDATA[Found Element By : By.xpath: //input[@id='Main_Login_txtPassword']]]>
-    </line>
-    <line>
-      <![CDATA[Trying to find Element By : By.xpath: //input[@id='Main_Login_btnLoginEnter']]]>
-    </line>
-    <line>
-      <![CDATA[Found Element By : By.xpath: //input[@id='Main_Login_btnLoginEnter']]]>
-    </line>
-    <line>
-      <![CDATA[Trying to click on: [[ChromeDriver: chrome on XP (8a580b93f6845f5b4693642b287d0517)] -> xpath: //input[@id='Main_Login_btnLoginEnter']]]]>
-    </line>
-    <line>
-      <![CDATA[Clicked on: [[ChromeDriver: chrome on XP (8a580b93f6845f5b4693642b287d0517)] -> xpath: //input[@id='Main_Login_btnLoginEnter']]]]>
-    </line>
-    <line>
-      <![CDATA[Trying to find Element By : By.xpath: //div[@id='promotion-modal']//span[contains(text(),'×')]]]>
-    </line>
-    <line>
-      <![CDATA[Found Element By : By.xpath: //div[@id='promotion-modal']//span[contains(text(),'×')]]]>
-    </line>
-    <line>
-      <![CDATA[Trying to find Element By : By.xpath: //div[@id='promotion-modal']//span[contains(text(),'×')]]]>
-    </line>
-    <line>
-      <![CDATA[Found Element By : By.xpath: //div[@id='promotion-modal']//span[contains(text(),'×')]]]>
-    </line>
-    <line>
-      <![CDATA[Trying to find Element By : By.xpath: //div[@id='promotion-modal']//span[contains(text(),'×')]]]>
-    </line>
-    <line>
-      <![CDATA[Found Element By : By.xpath: //div[@id='promotion-modal']//span[contains(text(),'×')]]]>
-    </line>
-    <line>
-      <![CDATA[Trying to click on: [[ChromeDriver: chrome on XP (8a580b93f6845f5b4693642b287d0517)] -> xpath: //div[@id='promotion-modal']//span[contains(text(),'×')]]]]>
-    </line>
-    <line>
-      <![CDATA[Clicked on: [[ChromeDriver: chrome on XP (8a580b93f6845f5b4693642b287d0517)] -> xpath: //div[@id='promotion-modal']//span[contains(text(),'×')]]]]>
-    </line>
-    <line>
-      <![CDATA[Trying to find Element By : By.xpath: //div[@class='header-top']]]>
-    </line>
-    <line>
-      <![CDATA[Found Element By : By.xpath: //div[@class='header-top']]]>
-    </line>
-    <line>
       <![CDATA[Header TopMenu Validation is Visible ]]>
     </line>
     <line>
-      <![CDATA[Trying to find Element By : By.xpath: //div[@class='primary-nav-wrapper']]]>
-    </line>
-    <line>
-      <![CDATA[Found Element By : By.xpath: //div[@class='primary-nav-wrapper']]]>
-    </line>
-    <line>
       <![CDATA[Header Menu Validation is Visible ]]>
-    </line>
-    <line>
-      <![CDATA[Trying to find Element By : By.xpath: //div[@class='col-sm-6 col-xs-8']//img[@class='logo img-responsive']]]>
-    </line>
-    <line>
-      <![CDATA[Found Element By : By.xpath: //div[@class='col-sm-6 col-xs-8']//img[@class='logo img-responsive']]]>
     </line>
     <line>
       <![CDATA[Successful logging with username -  perftest1]]>
     </line>
     <line>
-      <![CDATA[-----------------------AccountHistoryTest--------------]]>
+      <![CDATA[----------------------- EV_Account_History_Tab_Validation --------------]]>
     </line>
     <line>
       <![CDATA[Account History]]>
     </line>
     <line>
-      <![CDATA[Trying to find Element By : By.xpath: //ul[@class='nav nav-tabs']//a[contains(text(),'My Account')]]]>
-    </line>
-    <line>
-      <![CDATA[Found Element By : By.xpath: //ul[@class='nav nav-tabs']//a[contains(text(),'My Account')]]]>
-    </line>
-    <line>
-      <![CDATA[Trying to find Element By : By.xpath: //ul[@class='nav nav-tabs']//a[contains(text(),'My Account')]]]>
-    </line>
-    <line>
-      <![CDATA[Found Element By : By.xpath: //ul[@class='nav nav-tabs']//a[contains(text(),'My Account')]]]>
-    </line>
-    <line>
-      <![CDATA[Trying to click on: [[ChromeDriver: chrome on XP (8a580b93f6845f5b4693642b287d0517)] -> xpath: //ul[@class='nav nav-tabs']//a[contains(text(),'My Account')]]]]>
-    </line>
-    <line>
-      <![CDATA[Clicked on: [[ChromeDriver: chrome on XP (8a580b93f6845f5b4693642b287d0517)] -> xpath: //ul[@class='nav nav-tabs']//a[contains(text(),'My Account')]]]]>
-    </line>
-    <line>
-      <![CDATA[Trying to find Element By : By.xpath: //ul[@class='list-unstyled']//a[contains(text(),'Account History')]]]>
-    </line>
-    <line>
-      <![CDATA[Found Element By : By.xpath: //ul[@class='list-unstyled']//a[contains(text(),'Account History')]]]>
-    </line>
-    <line>
-      <![CDATA[Trying to find Element By : By.xpath: //ul[@class='list-unstyled']//a[contains(text(),'Account History')]]]>
-    </line>
-    <line>
-      <![CDATA[Found Element By : By.xpath: //ul[@class='list-unstyled']//a[contains(text(),'Account History')]]]>
-    </line>
-    <line>
-      <![CDATA[Trying to click on: [[ChromeDriver: chrome on XP (8a580b93f6845f5b4693642b287d0517)] -> xpath: //ul[@class='list-unstyled']//a[contains(text(),'Account History')]]]]>
-    </line>
-    <line>
-      <![CDATA[Clicked on: [[ChromeDriver: chrome on XP (8a580b93f6845f5b4693642b287d0517)] -> xpath: //ul[@class='list-unstyled']//a[contains(text(),'Account History')]]]]>
-    </line>
-    <line>
       <![CDATA[Clicked on Account History Link]]>
-    </line>
-    <line>
-      <![CDATA[Trying to find Element By : By.xpath: //div[@class='header-top']]]>
-    </line>
-    <line>
-      <![CDATA[Found Element By : By.xpath: //div[@class='header-top']]]>
     </line>
     <line>
       <![CDATA[Header TopMenu Validation is Visible ]]>
     </line>
     <line>
-      <![CDATA[Trying to find Element By : By.xpath: //div[@class='primary-nav-wrapper']]]>
-    </line>
-    <line>
-      <![CDATA[Found Element By : By.xpath: //div[@class='primary-nav-wrapper']]]>
-    </line>
-    <line>
       <![CDATA[Header Menu Validation is Visible ]]>
-    </line>
-    <line>
-      <![CDATA[Trying to find Element By : By.xpath: //div[@id='divLeftNav']]]>
-    </line>
-    <line>
-      <![CDATA[Found Element By : By.xpath: //div[@id='divLeftNav']]]>
-    </line>
-    <line>
-      <![CDATA[Trying to find Element By : By.xpath: //div[@id='divLeftNav']]]>
-    </line>
-    <line>
-      <![CDATA[Found Element By : By.xpath: //div[@id='divLeftNav']]]>
     </line>
     <line>
       <![CDATA[Side Menu Validation is Visible ]]>
     </line>
     <line>
-      <![CDATA[Trying to find Element By : By.xpath: //span[@class='filter-option pull-left'][contains(text(),'10010730041')]]]>
-    </line>
-    <line>
-      <![CDATA[Found Element By : By.xpath: //span[@class='filter-option pull-left'][contains(text(),'10010730041')]]]>
-    </line>
-    <line>
-      <![CDATA[Trying to find Element By : By.xpath: //span[@class='filter-option pull-left'][contains(text(),'10010730041')]]]>
-    </line>
-    <line>
-      <![CDATA[Found Element By : By.xpath: //span[@class='filter-option pull-left'][contains(text(),'10010730041')]]]>
-    </line>
-    <line>
-      <![CDATA[Trying to click on: [[ChromeDriver: chrome on XP (8a580b93f6845f5b4693642b287d0517)] -> xpath: //span[@class='filter-option pull-left'][contains(text(),'10010730041')]]]]>
-    </line>
-    <line>
-      <![CDATA[Clicked on: [[ChromeDriver: chrome on XP (8a580b93f6845f5b4693642b287d0517)] -> xpath: //span[@class='filter-option pull-left'][contains(text(),'10010730041')]]]]>
-    </line>
-    <line>
-      <![CDATA[Trying to find Element By : By.xpath: //div[@class='btn-group bootstrap-select form-control dropup open']//span[@class='text'][contains(text(),'ALL')]]]>
-    </line>
-    <line>
-      <![CDATA[Found Element By : By.xpath: //div[@class='btn-group bootstrap-select form-control dropup open']//span[@class='text'][contains(text(),'ALL')]]]>
-    </line>
-    <line>
-      <![CDATA[Trying to find Element By : By.xpath: //div[@class='btn-group bootstrap-select form-control dropup open']//span[@class='text'][contains(text(),'ALL')]]]>
-    </line>
-    <line>
-      <![CDATA[Found Element By : By.xpath: //div[@class='btn-group bootstrap-select form-control dropup open']//span[@class='text'][contains(text(),'ALL')]]]>
-    </line>
-    <line>
-      <![CDATA[Trying to click on: [[ChromeDriver: chrome on XP (8a580b93f6845f5b4693642b287d0517)] -> xpath: //div[@class='btn-group bootstrap-select form-control dropup open']//span[@class='text'][contains(text(),'ALL')]]]]>
-    </line>
-    <line>
-      <![CDATA[Clicked on: [[ChromeDriver: chrome on XP (8a580b93f6845f5b4693642b287d0517)] -> xpath: //div[@class='btn-group bootstrap-select form-control dropup open']//span[@class='text'][contains(text(),'ALL')]]]]>
-    </line>
-    <line>
-      <![CDATA[Trying to find Element By : By.xpath: //a[@id='main_lnkApply']]]>
-    </line>
-    <line>
-      <![CDATA[Found Element By : By.xpath: //a[@id='main_lnkApply']]]>
-    </line>
-    <line>
-      <![CDATA[Trying to click on: [[ChromeDriver: chrome on XP (8a580b93f6845f5b4693642b287d0517)] -> xpath: //a[@id='main_lnkApply']]]]>
-    </line>
-    <line>
-      <![CDATA[Clicked on: [[ChromeDriver: chrome on XP (8a580b93f6845f5b4693642b287d0517)] -> xpath: //a[@id='main_lnkApply']]]]>
-    </line>
-    <line>
-      <![CDATA[Trying to find Element By : By.xpath: //table[@id='payHistList']]]>
-    </line>
-    <line>
-      <![CDATA[Found Element By : By.xpath: //table[@id='payHistList']]]>
-    </line>
-    <line>
-      <![CDATA[Trying to find Element By : By.tagName: tr]]>
-    </line>
-    <line>
-      <![CDATA[Found Element By : By.tagName: tr]]>
-    </line>
-    <line>
       <![CDATA[There is data]]>
     </line>
     <line>
-      <![CDATA[-----------------------PayBillTest--------------]]>
+      <![CDATA[----------------------- EV_Pay_Bill_Tab_Validation --------------]]>
     </line>
     <line>
       <![CDATA[Pay Bill]]>
     </line>
     <line>
-      <![CDATA[Trying to find Element By : By.xpath: //ul[@class='nav nav-tabs']//a[contains(text(),'My Account')]]]>
-    </line>
-    <line>
-      <![CDATA[Found Element By : By.xpath: //ul[@class='nav nav-tabs']//a[contains(text(),'My Account')]]]>
-    </line>
-    <line>
-      <![CDATA[Trying to find Element By : By.xpath: //ul[@class='nav nav-tabs']//a[contains(text(),'My Account')]]]>
-    </line>
-    <line>
-      <![CDATA[Found Element By : By.xpath: //ul[@class='nav nav-tabs']//a[contains(text(),'My Account')]]]>
-    </line>
-    <line>
-      <![CDATA[Trying to click on: [[ChromeDriver: chrome on XP (8a580b93f6845f5b4693642b287d0517)] -> xpath: //ul[@class='nav nav-tabs']//a[contains(text(),'My Account')]]]]>
-    </line>
-    <line>
-      <![CDATA[Clicked on: [[ChromeDriver: chrome on XP (8a580b93f6845f5b4693642b287d0517)] -> xpath: //ul[@class='nav nav-tabs']//a[contains(text(),'My Account')]]]]>
-    </line>
-    <line>
-      <![CDATA[Trying to find Element By : By.xpath: //ul[@class='list-unstyled']//a[contains(text(),'Pay Bill')]]]>
-    </line>
-    <line>
-      <![CDATA[Found Element By : By.xpath: //ul[@class='list-unstyled']//a[contains(text(),'Pay Bill')]]]>
-    </line>
-    <line>
-      <![CDATA[Trying to find Element By : By.xpath: //ul[@class='list-unstyled']//a[contains(text(),'Pay Bill')]]]>
-    </line>
-    <line>
-      <![CDATA[Found Element By : By.xpath: //ul[@class='list-unstyled']//a[contains(text(),'Pay Bill')]]]>
-    </line>
-    <line>
-      <![CDATA[Trying to click on: [[ChromeDriver: chrome on XP (8a580b93f6845f5b4693642b287d0517)] -> xpath: //ul[@class='list-unstyled']//a[contains(text(),'Pay Bill')]]]]>
-    </line>
-    <line>
-      <![CDATA[Clicked on: [[ChromeDriver: chrome on XP (8a580b93f6845f5b4693642b287d0517)] -> xpath: //ul[@class='list-unstyled']//a[contains(text(),'Pay Bill')]]]]>
-    </line>
-    <line>
       <![CDATA[Clicked on Pay Bill Link]]>
-    </line>
-    <line>
-      <![CDATA[Trying to find Element By : By.xpath: //div[@class='header-top']]]>
-    </line>
-    <line>
-      <![CDATA[Found Element By : By.xpath: //div[@class='header-top']]]>
     </line>
     <line>
       <![CDATA[Header TopMenu Validation is Visible ]]>
     </line>
     <line>
-      <![CDATA[Trying to find Element By : By.xpath: //div[@class='primary-nav-wrapper']]]>
-    </line>
-    <line>
-      <![CDATA[Found Element By : By.xpath: //div[@class='primary-nav-wrapper']]]>
-    </line>
-    <line>
       <![CDATA[Header Menu Validation is Visible ]]>
-    </line>
-    <line>
-      <![CDATA[Trying to find Element By : By.xpath: //span[@id='main_lblNickName']]]>
-    </line>
-    <line>
-      <![CDATA[Found Element By : By.xpath: //span[@id='main_lblNickName']]]>
-    </line>
-    <line>
-      <![CDATA[Trying to find Element By : By.xpath:  //span[@id='main_lblAccountNo']]]>
-    </line>
-    <line>
-      <![CDATA[Found Element By : By.xpath:  //span[@id='main_lblAccountNo']]]>
     </line>
     <line>
       <![CDATA[Account Number is 10010730041]]>
     </line>
     <line>
-      <![CDATA[Trying to find Element By : By.xpath: //span[@class='filter-option pull-left'][contains(text(),'Select Bank Account')]]]>
-    </line>
-    <line>
-      <![CDATA[Found Element By : By.xpath: //span[@class='filter-option pull-left'][contains(text(),'Select Bank Account')]]]>
-    </line>
-    <line>
-      <![CDATA[Trying to click on: [[ChromeDriver: chrome on XP (8a580b93f6845f5b4693642b287d0517)] -> xpath: //span[@class='filter-option pull-left'][contains(text(),'Select Bank Account')]]]]>
-    </line>
-    <line>
-      <![CDATA[Clicked on: [[ChromeDriver: chrome on XP (8a580b93f6845f5b4693642b287d0517)] -> xpath: //span[@class='filter-option pull-left'][contains(text(),'Select Bank Account')]]]]>
-    </line>
-    <line>
-      <![CDATA[Trying to find Element By : By.xpath:   //div[@class='btn-group bootstrap-select form-control open']//li[2]//a[1]]]>
-    </line>
-    <line>
-      <![CDATA[Found Element By : By.xpath:   //div[@class='btn-group bootstrap-select form-control open']//li[2]//a[1]]]>
-    </line>
-    <line>
-      <![CDATA[Trying to click on: [[ChromeDriver: chrome on XP (8a580b93f6845f5b4693642b287d0517)] -> xpath:   //div[@class='btn-group bootstrap-select form-control open']//li[2]//a[1]]]]>
-    </line>
-    <line>
-      <![CDATA[Clicked on: [[ChromeDriver: chrome on XP (8a580b93f6845f5b4693642b287d0517)] -> xpath:   //div[@class='btn-group bootstrap-select form-control open']//li[2]//a[1]]]]>
-    </line>
-    <line>
       <![CDATA[Clicked on Aron Payment Method]]>
     </line>
     <line>
-      <![CDATA[Trying to find Element By : By.xpath:  //span[@id='main_lblAmountDue']]]>
+      <![CDATA[Account Number  Validation     10010730041 is equal to 10010730041]]>
     </line>
     <line>
-      <![CDATA[Found Element By : By.xpath:  //span[@id='main_lblAmountDue']]]>
+      <![CDATA[Due Date  Validation     10/09/2018 is equal to 10/09/2018]]>
     </line>
     <line>
-      <![CDATA[Trying to find Element By : By.xpath:   //label[contains(text(),'Amount Due:')]]]>
+      <![CDATA[Amount Price  Validation     $8,760.60 is equal to $8,760.60]]>
     </line>
     <line>
-      <![CDATA[Found Element By : By.xpath:   //label[contains(text(),'Amount Due:')]]]>
-    </line>
-    <line>
-      <![CDATA[Trying to click on: [[ChromeDriver: chrome on XP (8a580b93f6845f5b4693642b287d0517)] -> xpath:   //label[contains(text(),'Amount Due:')]]]]>
-    </line>
-    <line>
-      <![CDATA[Clicked on: [[ChromeDriver: chrome on XP (8a580b93f6845f5b4693642b287d0517)] -> xpath:   //label[contains(text(),'Amount Due:')]]]]>
-    </line>
-    <line>
-      <![CDATA[Trying to find Element By : By.xpath: //label[contains(text(),'Pay Now')]]]>
-    </line>
-    <line>
-      <![CDATA[Found Element By : By.xpath: //label[contains(text(),'Pay Now')]]]>
-    </line>
-    <line>
-      <![CDATA[Trying to click on: [[ChromeDriver: chrome on XP (8a580b93f6845f5b4693642b287d0517)] -> xpath: //label[contains(text(),'Pay Now')]]]]>
-    </line>
-    <line>
-      <![CDATA[Clicked on: [[ChromeDriver: chrome on XP (8a580b93f6845f5b4693642b287d0517)] -> xpath: //label[contains(text(),'Pay Now')]]]]>
-    </line>
-    <line>
-      <![CDATA[Trying to find Element By : By.xpath: //span[@id='main_lblPayASAP']]]>
-    </line>
-    <line>
-      <![CDATA[Found Element By : By.xpath: //span[@id='main_lblPayASAP']]]>
-    </line>
-    <line>
-      <![CDATA[Trying to find Element By : By.xpath:  //span[@id='main_lblDueDate']]]>
-    </line>
-    <line>
-      <![CDATA[Found Element By : By.xpath:  //span[@id='main_lblDueDate']]]>
-    </line>
-    <line>
-      <![CDATA[Trying to find Element By : By.xpath: //a[@id='main_btnConfirm']]]>
-    </line>
-    <line>
-      <![CDATA[Found Element By : By.xpath: //a[@id='main_btnConfirm']]]>
-    </line>
-    <line>
-      <![CDATA[Trying to click on: [[ChromeDriver: chrome on XP (8a580b93f6845f5b4693642b287d0517)] -> xpath: //a[@id='main_btnConfirm']]]]>
-    </line>
-    <line>
-      <![CDATA[Clicked on: [[ChromeDriver: chrome on XP (8a580b93f6845f5b4693642b287d0517)] -> xpath: //a[@id='main_btnConfirm']]]]>
-    </line>
-    <line>
-      <![CDATA[Trying to find Element By : By.xpath: //td[@class='tdAccountNumber']]]>
-    </line>
-    <line>
-      <![CDATA[Found Element By : By.xpath: //td[@class='tdAccountNumber']]]>
-    </line>
-    <line>
-      <![CDATA[Account Number Validation      10010730041 is equal to 10010730041]]>
-    </line>
-    <line>
-      <![CDATA[Trying to find Element By : By.xpath:  //td[@class='tdDueDate']]]>
-    </line>
-    <line>
-      <![CDATA[Found Element By : By.xpath:  //td[@class='tdDueDate']]]>
-    </line>
-    <line>
-      <![CDATA[Due Date Validation      10/09/2018 is equal to 10/09/2018]]>
-    </line>
-    <line>
-      <![CDATA[Trying to find Element By : By.xpath:  //td[@class='tdPaymentAmount']]]>
-    </line>
-    <line>
-      <![CDATA[Found Element By : By.xpath:  //td[@class='tdPaymentAmount']]]>
-    </line>
-    <line>
-      <![CDATA[Amount Price Vaildation      $8,760.60 is equal to $8,760.60]]>
-    </line>
-    <line>
-      <![CDATA[Trying to find Element By : By.xpath: //td[@class='tdPaymentDate']]]>
-    </line>
-    <line>
-      <![CDATA[Found Element By : By.xpath: //td[@class='tdPaymentDate']]]>
-    </line>
-    <line>
-      <![CDATA[Actual Date Validation      01/20/2020 is equal to 01/20/2020]]>
+      <![CDATA[Actual Date  Validation     01/24/2020 is equal to 01/24/2020]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="135004" started-at="2020-01-20T13:11:03Z" finished-at="2020-01-20T13:13:18Z">
+  <suite name="Default suite" duration-ms="178190" started-at="2020-01-24T12:57:13Z" finished-at="2020-01-24T13:00:11Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="135004" started-at="2020-01-20T13:11:03Z" finished-at="2020-01-20T13:13:18Z">
+    <test name="Default test" duration-ms="178190" started-at="2020-01-24T12:57:13Z" finished-at="2020-01-24T13:00:11Z">
       <class name="com.eversource.qa.testcases.LoginPageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.eversource.qa.testcases.LoginPageTest@1d371b2d]" name="setUp" is-config="true" duration-ms="36682" started-at="2020-01-20T18:41:03Z" finished-at="2020-01-20T18:41:39Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.eversource.qa.testcases.LoginPageTest@1d371b2d]" name="setUp" is-config="true" duration-ms="32269" started-at="2020-01-24T18:27:13Z" finished-at="2020-01-24T18:27:45Z">
           <reporter-output>
-            <line>
-              <![CDATA[Before navigating to: 'https://pat.eversource.us/']]>
-            </line>
-            <line>
-              <![CDATA[Navigated to:'https://pat.eversource.us/']]>
-            </line>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="LoginTest()[pri:1, instance:com.eversource.qa.testcases.LoginPageTest@1d371b2d]" name="LoginTest" duration-ms="36083" started-at="2020-01-20T18:41:39Z" finished-at="2020-01-20T18:42:16Z">
+        <test-method status="PASS" signature="LoginTest()[pri:1, instance:com.eversource.qa.testcases.LoginPageTest@1d371b2d]" name="LoginTest" duration-ms="45219" started-at="2020-01-24T18:27:45Z" finished-at="2020-01-24T18:28:30Z">
           <reporter-output>
             <line>
-              <![CDATA[-----------------------LoginTest--------------]]>
+              <![CDATA[----------------------- EV_Login_Validation -------------]]>
             </line>
             <line>
-              <![CDATA[Trying to find Element By : By.xpath: //div[@id='RegionSelectorModal']//div[@class='modal-dialog']//div[@class='modal-content col-xs-12 col-sm-10 col-sm-offset-1 col-md-12 col-md-offset-0']//div[@class='modal-body']]]>
-            </line>
-            <line>
-              <![CDATA[Found Element By : By.xpath: //div[@id='RegionSelectorModal']//div[@class='modal-dialog']//div[@class='modal-content col-xs-12 col-sm-10 col-sm-offset-1 col-md-12 col-md-offset-0']//div[@class='modal-body']]]>
-            </line>
-            <line>
-              <![CDATA[Trying to find Element By : By.xpath: //div[@id='map']//a[contains(text(),'New Hampshire')]]]>
-            </line>
-            <line>
-              <![CDATA[Found Element By : By.xpath: //div[@id='map']//a[contains(text(),'New Hampshire')]]]>
-            </line>
-            <line>
-              <![CDATA[Trying to click on: [[ChromeDriver: chrome on XP (8a580b93f6845f5b4693642b287d0517)] -> xpath: //div[@id='map']//a[contains(text(),'New Hampshire')]]]]>
-            </line>
-            <line>
-              <![CDATA[Clicked on: [[ChromeDriver: chrome on XP (8a580b93f6845f5b4693642b287d0517)] -> xpath: //div[@id='map']//a[contains(text(),'New Hampshire')]]]]>
-            </line>
-            <line>
-              <![CDATA[Clicked on New Hampshire Link]]>
+              <![CDATA[Clicked on connecticut Link]]>
             </line>
             <line>
               <![CDATA[Logging testing with username - perftest1]]>
@@ -503,433 +101,79 @@
               <![CDATA[Logging testing with password - #Eversource1]]>
             </line>
             <line>
-              <![CDATA[Trying to find Element By : By.xpath: //input[@id='Main_Login_txtUserName']]]>
-            </line>
-            <line>
-              <![CDATA[Found Element By : By.xpath: //input[@id='Main_Login_txtUserName']]]>
-            </line>
-            <line>
-              <![CDATA[Trying to find Element By : By.xpath: //input[@id='Main_Login_txtUserName']]]>
-            </line>
-            <line>
-              <![CDATA[Found Element By : By.xpath: //input[@id='Main_Login_txtUserName']]]>
-            </line>
-            <line>
-              <![CDATA[Trying to find Element By : By.xpath: //input[@id='Main_Login_txtPassword']]]>
-            </line>
-            <line>
-              <![CDATA[Found Element By : By.xpath: //input[@id='Main_Login_txtPassword']]]>
-            </line>
-            <line>
-              <![CDATA[Trying to find Element By : By.xpath: //input[@id='Main_Login_btnLoginEnter']]]>
-            </line>
-            <line>
-              <![CDATA[Found Element By : By.xpath: //input[@id='Main_Login_btnLoginEnter']]]>
-            </line>
-            <line>
-              <![CDATA[Trying to click on: [[ChromeDriver: chrome on XP (8a580b93f6845f5b4693642b287d0517)] -> xpath: //input[@id='Main_Login_btnLoginEnter']]]]>
-            </line>
-            <line>
-              <![CDATA[Clicked on: [[ChromeDriver: chrome on XP (8a580b93f6845f5b4693642b287d0517)] -> xpath: //input[@id='Main_Login_btnLoginEnter']]]]>
-            </line>
-            <line>
-              <![CDATA[Trying to find Element By : By.xpath: //div[@id='promotion-modal']//span[contains(text(),'×')]]]>
-            </line>
-            <line>
-              <![CDATA[Found Element By : By.xpath: //div[@id='promotion-modal']//span[contains(text(),'×')]]]>
-            </line>
-            <line>
-              <![CDATA[Trying to find Element By : By.xpath: //div[@id='promotion-modal']//span[contains(text(),'×')]]]>
-            </line>
-            <line>
-              <![CDATA[Found Element By : By.xpath: //div[@id='promotion-modal']//span[contains(text(),'×')]]]>
-            </line>
-            <line>
-              <![CDATA[Trying to find Element By : By.xpath: //div[@id='promotion-modal']//span[contains(text(),'×')]]]>
-            </line>
-            <line>
-              <![CDATA[Found Element By : By.xpath: //div[@id='promotion-modal']//span[contains(text(),'×')]]]>
-            </line>
-            <line>
-              <![CDATA[Trying to click on: [[ChromeDriver: chrome on XP (8a580b93f6845f5b4693642b287d0517)] -> xpath: //div[@id='promotion-modal']//span[contains(text(),'×')]]]]>
-            </line>
-            <line>
-              <![CDATA[Clicked on: [[ChromeDriver: chrome on XP (8a580b93f6845f5b4693642b287d0517)] -> xpath: //div[@id='promotion-modal']//span[contains(text(),'×')]]]]>
-            </line>
-            <line>
-              <![CDATA[Trying to find Element By : By.xpath: //div[@class='header-top']]]>
-            </line>
-            <line>
-              <![CDATA[Found Element By : By.xpath: //div[@class='header-top']]]>
-            </line>
-            <line>
               <![CDATA[Header TopMenu Validation is Visible ]]>
             </line>
             <line>
-              <![CDATA[Trying to find Element By : By.xpath: //div[@class='primary-nav-wrapper']]]>
-            </line>
-            <line>
-              <![CDATA[Found Element By : By.xpath: //div[@class='primary-nav-wrapper']]]>
-            </line>
-            <line>
               <![CDATA[Header Menu Validation is Visible ]]>
-            </line>
-            <line>
-              <![CDATA[Trying to find Element By : By.xpath: //div[@class='col-sm-6 col-xs-8']//img[@class='logo img-responsive']]]>
-            </line>
-            <line>
-              <![CDATA[Found Element By : By.xpath: //div[@class='col-sm-6 col-xs-8']//img[@class='logo img-responsive']]]>
             </line>
             <line>
               <![CDATA[Successful logging with username -  perftest1]]>
             </line>
           </reporter-output>
         </test-method> <!-- LoginTest -->
-        <test-method status="PASS" signature="AccountHistoryTest()[pri:2, instance:com.eversource.qa.testcases.LoginPageTest@1d371b2d]" name="AccountHistoryTest" duration-ms="41632" started-at="2020-01-20T18:42:16Z" finished-at="2020-01-20T18:42:57Z">
+        <test-method status="PASS" signature="AccountHistoryTest()[pri:2, instance:com.eversource.qa.testcases.LoginPageTest@1d371b2d]" name="AccountHistoryTest" duration-ms="68413" started-at="2020-01-24T18:28:30Z" finished-at="2020-01-24T18:29:39Z">
           <reporter-output>
             <line>
-              <![CDATA[-----------------------AccountHistoryTest--------------]]>
+              <![CDATA[----------------------- EV_Account_History_Tab_Validation --------------]]>
             </line>
             <line>
               <![CDATA[Account History]]>
             </line>
             <line>
-              <![CDATA[Trying to find Element By : By.xpath: //ul[@class='nav nav-tabs']//a[contains(text(),'My Account')]]]>
-            </line>
-            <line>
-              <![CDATA[Found Element By : By.xpath: //ul[@class='nav nav-tabs']//a[contains(text(),'My Account')]]]>
-            </line>
-            <line>
-              <![CDATA[Trying to find Element By : By.xpath: //ul[@class='nav nav-tabs']//a[contains(text(),'My Account')]]]>
-            </line>
-            <line>
-              <![CDATA[Found Element By : By.xpath: //ul[@class='nav nav-tabs']//a[contains(text(),'My Account')]]]>
-            </line>
-            <line>
-              <![CDATA[Trying to click on: [[ChromeDriver: chrome on XP (8a580b93f6845f5b4693642b287d0517)] -> xpath: //ul[@class='nav nav-tabs']//a[contains(text(),'My Account')]]]]>
-            </line>
-            <line>
-              <![CDATA[Clicked on: [[ChromeDriver: chrome on XP (8a580b93f6845f5b4693642b287d0517)] -> xpath: //ul[@class='nav nav-tabs']//a[contains(text(),'My Account')]]]]>
-            </line>
-            <line>
-              <![CDATA[Trying to find Element By : By.xpath: //ul[@class='list-unstyled']//a[contains(text(),'Account History')]]]>
-            </line>
-            <line>
-              <![CDATA[Found Element By : By.xpath: //ul[@class='list-unstyled']//a[contains(text(),'Account History')]]]>
-            </line>
-            <line>
-              <![CDATA[Trying to find Element By : By.xpath: //ul[@class='list-unstyled']//a[contains(text(),'Account History')]]]>
-            </line>
-            <line>
-              <![CDATA[Found Element By : By.xpath: //ul[@class='list-unstyled']//a[contains(text(),'Account History')]]]>
-            </line>
-            <line>
-              <![CDATA[Trying to click on: [[ChromeDriver: chrome on XP (8a580b93f6845f5b4693642b287d0517)] -> xpath: //ul[@class='list-unstyled']//a[contains(text(),'Account History')]]]]>
-            </line>
-            <line>
-              <![CDATA[Clicked on: [[ChromeDriver: chrome on XP (8a580b93f6845f5b4693642b287d0517)] -> xpath: //ul[@class='list-unstyled']//a[contains(text(),'Account History')]]]]>
-            </line>
-            <line>
               <![CDATA[Clicked on Account History Link]]>
-            </line>
-            <line>
-              <![CDATA[Trying to find Element By : By.xpath: //div[@class='header-top']]]>
-            </line>
-            <line>
-              <![CDATA[Found Element By : By.xpath: //div[@class='header-top']]]>
             </line>
             <line>
               <![CDATA[Header TopMenu Validation is Visible ]]>
             </line>
             <line>
-              <![CDATA[Trying to find Element By : By.xpath: //div[@class='primary-nav-wrapper']]]>
-            </line>
-            <line>
-              <![CDATA[Found Element By : By.xpath: //div[@class='primary-nav-wrapper']]]>
-            </line>
-            <line>
               <![CDATA[Header Menu Validation is Visible ]]>
             </line>
             <line>
-              <![CDATA[Trying to find Element By : By.xpath: //div[@id='divLeftNav']]]>
-            </line>
-            <line>
-              <![CDATA[Found Element By : By.xpath: //div[@id='divLeftNav']]]>
-            </line>
-            <line>
-              <![CDATA[Trying to find Element By : By.xpath: //div[@id='divLeftNav']]]>
-            </line>
-            <line>
-              <![CDATA[Found Element By : By.xpath: //div[@id='divLeftNav']]]>
-            </line>
-            <line>
               <![CDATA[Side Menu Validation is Visible ]]>
-            </line>
-            <line>
-              <![CDATA[Trying to find Element By : By.xpath: //span[@class='filter-option pull-left'][contains(text(),'10010730041')]]]>
-            </line>
-            <line>
-              <![CDATA[Found Element By : By.xpath: //span[@class='filter-option pull-left'][contains(text(),'10010730041')]]]>
-            </line>
-            <line>
-              <![CDATA[Trying to find Element By : By.xpath: //span[@class='filter-option pull-left'][contains(text(),'10010730041')]]]>
-            </line>
-            <line>
-              <![CDATA[Found Element By : By.xpath: //span[@class='filter-option pull-left'][contains(text(),'10010730041')]]]>
-            </line>
-            <line>
-              <![CDATA[Trying to click on: [[ChromeDriver: chrome on XP (8a580b93f6845f5b4693642b287d0517)] -> xpath: //span[@class='filter-option pull-left'][contains(text(),'10010730041')]]]]>
-            </line>
-            <line>
-              <![CDATA[Clicked on: [[ChromeDriver: chrome on XP (8a580b93f6845f5b4693642b287d0517)] -> xpath: //span[@class='filter-option pull-left'][contains(text(),'10010730041')]]]]>
-            </line>
-            <line>
-              <![CDATA[Trying to find Element By : By.xpath: //div[@class='btn-group bootstrap-select form-control dropup open']//span[@class='text'][contains(text(),'ALL')]]]>
-            </line>
-            <line>
-              <![CDATA[Found Element By : By.xpath: //div[@class='btn-group bootstrap-select form-control dropup open']//span[@class='text'][contains(text(),'ALL')]]]>
-            </line>
-            <line>
-              <![CDATA[Trying to find Element By : By.xpath: //div[@class='btn-group bootstrap-select form-control dropup open']//span[@class='text'][contains(text(),'ALL')]]]>
-            </line>
-            <line>
-              <![CDATA[Found Element By : By.xpath: //div[@class='btn-group bootstrap-select form-control dropup open']//span[@class='text'][contains(text(),'ALL')]]]>
-            </line>
-            <line>
-              <![CDATA[Trying to click on: [[ChromeDriver: chrome on XP (8a580b93f6845f5b4693642b287d0517)] -> xpath: //div[@class='btn-group bootstrap-select form-control dropup open']//span[@class='text'][contains(text(),'ALL')]]]]>
-            </line>
-            <line>
-              <![CDATA[Clicked on: [[ChromeDriver: chrome on XP (8a580b93f6845f5b4693642b287d0517)] -> xpath: //div[@class='btn-group bootstrap-select form-control dropup open']//span[@class='text'][contains(text(),'ALL')]]]]>
-            </line>
-            <line>
-              <![CDATA[Trying to find Element By : By.xpath: //a[@id='main_lnkApply']]]>
-            </line>
-            <line>
-              <![CDATA[Found Element By : By.xpath: //a[@id='main_lnkApply']]]>
-            </line>
-            <line>
-              <![CDATA[Trying to click on: [[ChromeDriver: chrome on XP (8a580b93f6845f5b4693642b287d0517)] -> xpath: //a[@id='main_lnkApply']]]]>
-            </line>
-            <line>
-              <![CDATA[Clicked on: [[ChromeDriver: chrome on XP (8a580b93f6845f5b4693642b287d0517)] -> xpath: //a[@id='main_lnkApply']]]]>
-            </line>
-            <line>
-              <![CDATA[Trying to find Element By : By.xpath: //table[@id='payHistList']]]>
-            </line>
-            <line>
-              <![CDATA[Found Element By : By.xpath: //table[@id='payHistList']]]>
-            </line>
-            <line>
-              <![CDATA[Trying to find Element By : By.tagName: tr]]>
-            </line>
-            <line>
-              <![CDATA[Found Element By : By.tagName: tr]]>
             </line>
             <line>
               <![CDATA[There is data]]>
             </line>
           </reporter-output>
         </test-method> <!-- AccountHistoryTest -->
-        <test-method status="PASS" signature="PayBillTest()[pri:3, instance:com.eversource.qa.testcases.LoginPageTest@1d371b2d]" name="PayBillTest" duration-ms="19552" started-at="2020-01-20T18:42:57Z" finished-at="2020-01-20T18:43:17Z">
+        <test-method status="PASS" signature="PayBillTest()[pri:3, instance:com.eversource.qa.testcases.LoginPageTest@1d371b2d]" name="PayBillTest" duration-ms="29807" started-at="2020-01-24T18:29:39Z" finished-at="2020-01-24T18:30:08Z">
           <reporter-output>
             <line>
-              <![CDATA[-----------------------PayBillTest--------------]]>
+              <![CDATA[----------------------- EV_Pay_Bill_Tab_Validation --------------]]>
             </line>
             <line>
               <![CDATA[Pay Bill]]>
             </line>
             <line>
-              <![CDATA[Trying to find Element By : By.xpath: //ul[@class='nav nav-tabs']//a[contains(text(),'My Account')]]]>
-            </line>
-            <line>
-              <![CDATA[Found Element By : By.xpath: //ul[@class='nav nav-tabs']//a[contains(text(),'My Account')]]]>
-            </line>
-            <line>
-              <![CDATA[Trying to find Element By : By.xpath: //ul[@class='nav nav-tabs']//a[contains(text(),'My Account')]]]>
-            </line>
-            <line>
-              <![CDATA[Found Element By : By.xpath: //ul[@class='nav nav-tabs']//a[contains(text(),'My Account')]]]>
-            </line>
-            <line>
-              <![CDATA[Trying to click on: [[ChromeDriver: chrome on XP (8a580b93f6845f5b4693642b287d0517)] -> xpath: //ul[@class='nav nav-tabs']//a[contains(text(),'My Account')]]]]>
-            </line>
-            <line>
-              <![CDATA[Clicked on: [[ChromeDriver: chrome on XP (8a580b93f6845f5b4693642b287d0517)] -> xpath: //ul[@class='nav nav-tabs']//a[contains(text(),'My Account')]]]]>
-            </line>
-            <line>
-              <![CDATA[Trying to find Element By : By.xpath: //ul[@class='list-unstyled']//a[contains(text(),'Pay Bill')]]]>
-            </line>
-            <line>
-              <![CDATA[Found Element By : By.xpath: //ul[@class='list-unstyled']//a[contains(text(),'Pay Bill')]]]>
-            </line>
-            <line>
-              <![CDATA[Trying to find Element By : By.xpath: //ul[@class='list-unstyled']//a[contains(text(),'Pay Bill')]]]>
-            </line>
-            <line>
-              <![CDATA[Found Element By : By.xpath: //ul[@class='list-unstyled']//a[contains(text(),'Pay Bill')]]]>
-            </line>
-            <line>
-              <![CDATA[Trying to click on: [[ChromeDriver: chrome on XP (8a580b93f6845f5b4693642b287d0517)] -> xpath: //ul[@class='list-unstyled']//a[contains(text(),'Pay Bill')]]]]>
-            </line>
-            <line>
-              <![CDATA[Clicked on: [[ChromeDriver: chrome on XP (8a580b93f6845f5b4693642b287d0517)] -> xpath: //ul[@class='list-unstyled']//a[contains(text(),'Pay Bill')]]]]>
-            </line>
-            <line>
               <![CDATA[Clicked on Pay Bill Link]]>
-            </line>
-            <line>
-              <![CDATA[Trying to find Element By : By.xpath: //div[@class='header-top']]]>
-            </line>
-            <line>
-              <![CDATA[Found Element By : By.xpath: //div[@class='header-top']]]>
             </line>
             <line>
               <![CDATA[Header TopMenu Validation is Visible ]]>
             </line>
             <line>
-              <![CDATA[Trying to find Element By : By.xpath: //div[@class='primary-nav-wrapper']]]>
-            </line>
-            <line>
-              <![CDATA[Found Element By : By.xpath: //div[@class='primary-nav-wrapper']]]>
-            </line>
-            <line>
               <![CDATA[Header Menu Validation is Visible ]]>
-            </line>
-            <line>
-              <![CDATA[Trying to find Element By : By.xpath: //span[@id='main_lblNickName']]]>
-            </line>
-            <line>
-              <![CDATA[Found Element By : By.xpath: //span[@id='main_lblNickName']]]>
-            </line>
-            <line>
-              <![CDATA[Trying to find Element By : By.xpath:  //span[@id='main_lblAccountNo']]]>
-            </line>
-            <line>
-              <![CDATA[Found Element By : By.xpath:  //span[@id='main_lblAccountNo']]]>
             </line>
             <line>
               <![CDATA[Account Number is 10010730041]]>
             </line>
             <line>
-              <![CDATA[Trying to find Element By : By.xpath: //span[@class='filter-option pull-left'][contains(text(),'Select Bank Account')]]]>
-            </line>
-            <line>
-              <![CDATA[Found Element By : By.xpath: //span[@class='filter-option pull-left'][contains(text(),'Select Bank Account')]]]>
-            </line>
-            <line>
-              <![CDATA[Trying to click on: [[ChromeDriver: chrome on XP (8a580b93f6845f5b4693642b287d0517)] -> xpath: //span[@class='filter-option pull-left'][contains(text(),'Select Bank Account')]]]]>
-            </line>
-            <line>
-              <![CDATA[Clicked on: [[ChromeDriver: chrome on XP (8a580b93f6845f5b4693642b287d0517)] -> xpath: //span[@class='filter-option pull-left'][contains(text(),'Select Bank Account')]]]]>
-            </line>
-            <line>
-              <![CDATA[Trying to find Element By : By.xpath:   //div[@class='btn-group bootstrap-select form-control open']//li[2]//a[1]]]>
-            </line>
-            <line>
-              <![CDATA[Found Element By : By.xpath:   //div[@class='btn-group bootstrap-select form-control open']//li[2]//a[1]]]>
-            </line>
-            <line>
-              <![CDATA[Trying to click on: [[ChromeDriver: chrome on XP (8a580b93f6845f5b4693642b287d0517)] -> xpath:   //div[@class='btn-group bootstrap-select form-control open']//li[2]//a[1]]]]>
-            </line>
-            <line>
-              <![CDATA[Clicked on: [[ChromeDriver: chrome on XP (8a580b93f6845f5b4693642b287d0517)] -> xpath:   //div[@class='btn-group bootstrap-select form-control open']//li[2]//a[1]]]]>
-            </line>
-            <line>
               <![CDATA[Clicked on Aron Payment Method]]>
             </line>
             <line>
-              <![CDATA[Trying to find Element By : By.xpath:  //span[@id='main_lblAmountDue']]]>
+              <![CDATA[Account Number  Validation     10010730041 is equal to 10010730041]]>
             </line>
             <line>
-              <![CDATA[Found Element By : By.xpath:  //span[@id='main_lblAmountDue']]]>
+              <![CDATA[Due Date  Validation     10/09/2018 is equal to 10/09/2018]]>
             </line>
             <line>
-              <![CDATA[Trying to find Element By : By.xpath:   //label[contains(text(),'Amount Due:')]]]>
+              <![CDATA[Amount Price  Validation     $8,760.60 is equal to $8,760.60]]>
             </line>
             <line>
-              <![CDATA[Found Element By : By.xpath:   //label[contains(text(),'Amount Due:')]]]>
-            </line>
-            <line>
-              <![CDATA[Trying to click on: [[ChromeDriver: chrome on XP (8a580b93f6845f5b4693642b287d0517)] -> xpath:   //label[contains(text(),'Amount Due:')]]]]>
-            </line>
-            <line>
-              <![CDATA[Clicked on: [[ChromeDriver: chrome on XP (8a580b93f6845f5b4693642b287d0517)] -> xpath:   //label[contains(text(),'Amount Due:')]]]]>
-            </line>
-            <line>
-              <![CDATA[Trying to find Element By : By.xpath: //label[contains(text(),'Pay Now')]]]>
-            </line>
-            <line>
-              <![CDATA[Found Element By : By.xpath: //label[contains(text(),'Pay Now')]]]>
-            </line>
-            <line>
-              <![CDATA[Trying to click on: [[ChromeDriver: chrome on XP (8a580b93f6845f5b4693642b287d0517)] -> xpath: //label[contains(text(),'Pay Now')]]]]>
-            </line>
-            <line>
-              <![CDATA[Clicked on: [[ChromeDriver: chrome on XP (8a580b93f6845f5b4693642b287d0517)] -> xpath: //label[contains(text(),'Pay Now')]]]]>
-            </line>
-            <line>
-              <![CDATA[Trying to find Element By : By.xpath: //span[@id='main_lblPayASAP']]]>
-            </line>
-            <line>
-              <![CDATA[Found Element By : By.xpath: //span[@id='main_lblPayASAP']]]>
-            </line>
-            <line>
-              <![CDATA[Trying to find Element By : By.xpath:  //span[@id='main_lblDueDate']]]>
-            </line>
-            <line>
-              <![CDATA[Found Element By : By.xpath:  //span[@id='main_lblDueDate']]]>
-            </line>
-            <line>
-              <![CDATA[Trying to find Element By : By.xpath: //a[@id='main_btnConfirm']]]>
-            </line>
-            <line>
-              <![CDATA[Found Element By : By.xpath: //a[@id='main_btnConfirm']]]>
-            </line>
-            <line>
-              <![CDATA[Trying to click on: [[ChromeDriver: chrome on XP (8a580b93f6845f5b4693642b287d0517)] -> xpath: //a[@id='main_btnConfirm']]]]>
-            </line>
-            <line>
-              <![CDATA[Clicked on: [[ChromeDriver: chrome on XP (8a580b93f6845f5b4693642b287d0517)] -> xpath: //a[@id='main_btnConfirm']]]]>
-            </line>
-            <line>
-              <![CDATA[Trying to find Element By : By.xpath: //td[@class='tdAccountNumber']]]>
-            </line>
-            <line>
-              <![CDATA[Found Element By : By.xpath: //td[@class='tdAccountNumber']]]>
-            </line>
-            <line>
-              <![CDATA[Account Number Validation      10010730041 is equal to 10010730041]]>
-            </line>
-            <line>
-              <![CDATA[Trying to find Element By : By.xpath:  //td[@class='tdDueDate']]]>
-            </line>
-            <line>
-              <![CDATA[Found Element By : By.xpath:  //td[@class='tdDueDate']]]>
-            </line>
-            <line>
-              <![CDATA[Due Date Validation      10/09/2018 is equal to 10/09/2018]]>
-            </line>
-            <line>
-              <![CDATA[Trying to find Element By : By.xpath:  //td[@class='tdPaymentAmount']]]>
-            </line>
-            <line>
-              <![CDATA[Found Element By : By.xpath:  //td[@class='tdPaymentAmount']]]>
-            </line>
-            <line>
-              <![CDATA[Amount Price Vaildation      $8,760.60 is equal to $8,760.60]]>
-            </line>
-            <line>
-              <![CDATA[Trying to find Element By : By.xpath: //td[@class='tdPaymentDate']]]>
-            </line>
-            <line>
-              <![CDATA[Found Element By : By.xpath: //td[@class='tdPaymentDate']]]>
-            </line>
-            <line>
-              <![CDATA[Actual Date Validation      01/20/2020 is equal to 01/20/2020]]>
+              <![CDATA[Actual Date  Validation     01/24/2020 is equal to 01/24/2020]]>
             </line>
           </reporter-output>
         </test-method> <!-- PayBillTest -->
-        <test-method status="PASS" signature="Flush()[pri:0, instance:com.eversource.qa.testcases.LoginPageTest@1d371b2d]" name="Flush" is-config="true" duration-ms="1025" started-at="2020-01-20T18:43:17Z" finished-at="2020-01-20T18:43:18Z">
+        <test-method status="PASS" signature="Flush()[pri:0, instance:com.eversource.qa.testcases.LoginPageTest@1d371b2d]" name="Flush" is-config="true" duration-ms="2453" started-at="2020-01-24T18:30:08Z" finished-at="2020-01-24T18:30:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Flush -->

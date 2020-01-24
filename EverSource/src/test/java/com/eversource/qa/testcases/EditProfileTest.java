@@ -2,7 +2,7 @@ package com.eversource.qa.testcases;
 
 
 import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
+import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
 import com.eversource.qa.base.TestBase;
@@ -19,8 +19,8 @@ public class EditProfileTest extends TestBase {
 	EditProfile EditPro;
 	
 	//Initializing
-	@BeforeTest
-	public void setUp(){
+	@BeforeSuite
+	public void setUp() throws Throwable{
 		initialization();
 		loginPage = new LoginPage();
 		Area = new RegionPage();
@@ -35,7 +35,7 @@ public class EditProfileTest extends TestBase {
 			
 			getReportname(new Object(){}.getClass().getEnclosingMethod().getName());
 			
-			Area.SelectRegion("New Hampshire");
+			Area.SelectRegion();
 			
 			homepage = loginPage.login(prop.getProperty("username"), prop.getProperty("password"));	
 		}
@@ -56,5 +56,8 @@ public class EditProfileTest extends TestBase {
 		public void Flush()
 		{
 			closeBrowser();
-		}
+			}
+		
+		
+
 }

@@ -19,7 +19,7 @@ public class EditProfile extends TestBase{
 	@FindBy(xpath="//input[@id='edit-submit']")
 	WebElement SaveUdate;
 	
-	@FindBy(xpath="//input[@id='edit-submit']")
+	@FindBy(xpath="//h1[contains(text(),'Edit My Profile')]")
 	WebElement SaveVerfication;
 	
 	public EditProfile() {
