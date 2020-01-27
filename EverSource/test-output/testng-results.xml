@@ -5,7 +5,7 @@
       <![CDATA[----------------------- EV_Login_Validation -------------]]>
     </line>
     <line>
-      <![CDATA[Clicked on connecticut Link]]>
+      <![CDATA[Clicked on New Hampshire Link]]>
     </line>
     <line>
       <![CDATA[Logging testing with username - perftest1]]>
@@ -74,25 +74,25 @@
       <![CDATA[Amount Price  Validation     $8,760.60 is equal to $8,760.60]]>
     </line>
     <line>
-      <![CDATA[Actual Date  Validation     01/24/2020 is equal to 01/24/2020]]>
+      <![CDATA[Actual Date  Validation     01/27/2020 is equal to 01/27/2020]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="178190" started-at="2020-01-24T12:57:13Z" finished-at="2020-01-24T13:00:11Z">
+  <suite name="Default suite" duration-ms="209729" started-at="2020-01-27T14:24:19Z" finished-at="2020-01-27T14:27:48Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="178190" started-at="2020-01-24T12:57:13Z" finished-at="2020-01-24T13:00:11Z">
+    <test name="Default test" duration-ms="209729" started-at="2020-01-27T14:24:19Z" finished-at="2020-01-27T14:27:48Z">
       <class name="com.eversource.qa.testcases.LoginPageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.eversource.qa.testcases.LoginPageTest@1d371b2d]" name="setUp" is-config="true" duration-ms="32269" started-at="2020-01-24T18:27:13Z" finished-at="2020-01-24T18:27:45Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.eversource.qa.testcases.LoginPageTest@4d5650ae]" name="setUp" is-config="true" duration-ms="42208" started-at="2020-01-27T19:54:19Z" finished-at="2020-01-27T19:55:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="LoginTest()[pri:1, instance:com.eversource.qa.testcases.LoginPageTest@1d371b2d]" name="LoginTest" duration-ms="45219" started-at="2020-01-24T18:27:45Z" finished-at="2020-01-24T18:28:30Z">
+        <test-method status="PASS" signature="LoginTest()[pri:1, instance:com.eversource.qa.testcases.LoginPageTest@4d5650ae]" name="LoginTest" duration-ms="29228" started-at="2020-01-27T19:55:01Z" finished-at="2020-01-27T19:55:30Z">
           <reporter-output>
             <line>
               <![CDATA[----------------------- EV_Login_Validation -------------]]>
             </line>
             <line>
-              <![CDATA[Clicked on connecticut Link]]>
+              <![CDATA[Clicked on New Hampshire Link]]>
             </line>
             <line>
               <![CDATA[Logging testing with username - perftest1]]>
@@ -111,7 +111,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- LoginTest -->
-        <test-method status="PASS" signature="AccountHistoryTest()[pri:2, instance:com.eversource.qa.testcases.LoginPageTest@1d371b2d]" name="AccountHistoryTest" duration-ms="68413" started-at="2020-01-24T18:28:30Z" finished-at="2020-01-24T18:29:39Z">
+        <test-method status="PASS" signature="AccountHistoryTest()[pri:2, instance:com.eversource.qa.testcases.LoginPageTest@4d5650ae]" name="AccountHistoryTest" duration-ms="117504" started-at="2020-01-27T19:55:30Z" finished-at="2020-01-27T19:57:28Z">
           <reporter-output>
             <line>
               <![CDATA[----------------------- EV_Account_History_Tab_Validation --------------]]>
@@ -136,7 +136,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- AccountHistoryTest -->
-        <test-method status="PASS" signature="PayBillTest()[pri:3, instance:com.eversource.qa.testcases.LoginPageTest@1d371b2d]" name="PayBillTest" duration-ms="29807" started-at="2020-01-24T18:29:39Z" finished-at="2020-01-24T18:30:08Z">
+        <test-method status="PASS" signature="PayBillTest()[pri:3, instance:com.eversource.qa.testcases.LoginPageTest@4d5650ae]" name="PayBillTest" duration-ms="19643" started-at="2020-01-27T19:57:28Z" finished-at="2020-01-27T19:57:47Z">
           <reporter-output>
             <line>
               <![CDATA[----------------------- EV_Pay_Bill_Tab_Validation --------------]]>
@@ -169,11 +169,11 @@
               <![CDATA[Amount Price  Validation     $8,760.60 is equal to $8,760.60]]>
             </line>
             <line>
-              <![CDATA[Actual Date  Validation     01/24/2020 is equal to 01/24/2020]]>
+              <![CDATA[Actual Date  Validation     01/27/2020 is equal to 01/27/2020]]>
             </line>
           </reporter-output>
         </test-method> <!-- PayBillTest -->
-        <test-method status="PASS" signature="Flush()[pri:0, instance:com.eversource.qa.testcases.LoginPageTest@1d371b2d]" name="Flush" is-config="true" duration-ms="2453" started-at="2020-01-24T18:30:08Z" finished-at="2020-01-24T18:30:11Z">
+        <test-method status="PASS" signature="Flush()[pri:0, instance:com.eversource.qa.testcases.LoginPageTest@4d5650ae]" name="Flush" is-config="true" duration-ms="1096" started-at="2020-01-27T19:57:47Z" finished-at="2020-01-27T19:57:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Flush -->

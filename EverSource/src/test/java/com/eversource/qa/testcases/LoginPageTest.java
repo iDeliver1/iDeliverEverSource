@@ -12,7 +12,6 @@ import com.eversource.qa.pages.LoginPage;
 import com.eversource.qa.pages.PayBill;
 import com.eversource.qa.pages.RegionPage;
 
-
 public class LoginPageTest extends TestBase{
 	
 	LoginPage loginPage;
