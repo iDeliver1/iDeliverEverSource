@@ -26,6 +26,7 @@ public class Gernric_functions extends TestBase {
 		 
 	   public static String fScreenReport() throws Throwable
 		{
+		   Thread.sleep(3000);
 	    	File source_image = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 			String Image_path = Report_Folder_path+"\\Screeshot"+fTimestamp()+".png";
 			File Desti_image = new File(Image_path);

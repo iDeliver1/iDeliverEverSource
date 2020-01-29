@@ -58,7 +58,7 @@ public class Extent_reporter extends TestBase {
 		String ReportStatus = "<b>Step Number "+Stepnumber+"<br>Description :</b> "+Description+"<br><b>Expected :</b> "+ExpectedStep+"<br><b>Actual :</b> "+ActualStep;
 		if(Status1.equalsIgnoreCase("PASS")){
 			 
-			System.out.println(ReportStatus);
+			
 			logger.log(Status.PASS, ReportStatus);
 			//logger.log(Status.PASS, ReportStatus, MediaEntityBuilder.createScreenCaptureFromPath(Gernric_functions.fScreenReport()).build());
 			logger.addScreenCaptureFromPath(Gernric_functions.fScreenReport());
@@ -91,14 +91,14 @@ public static void Argvalidation(String StepName,String Actual,String Expected) 
 		
 		try{
 			Assert.assertEquals(Actual, Expected);
-			Report("PASS",StepName,StepName.replaceAll("Validation", "")+" is equal to "+Actual,StepName+"should be equal to "+Expected);
+			Report("PASS","Verifying "+StepName,StepName+" is equal to "+Actual,StepName+"should be equal to "+Expected);
 			
 			log(StepName+" Validation     "+Actual + " is equal to " +Expected);
 			
 			}catch(Exception e){ 
 				log(StepName+"  Validation    "+ Actual + " is not  equal to " +Expected+" because "+e);
 				
-				Report("FAIL",StepName,StepName.replaceAll("Validation", "")+"is equal to "+Actual+""+e,StepName+"should be equal to "+Expected);
+				Report("FAIL","Verifying "+StepName,StepName+"is equal to "+Actual+""+e,StepName+"should be equal to "+Expected);
 			}
 	
 	}
@@ -107,12 +107,12 @@ public static void Menuvalidation(String StepName,WebElement element ) throws Th
 	
 	try{
 		 Assert.assertEquals(true, element.isDisplayed());
-		Report("PASS", StepName,StepName.replaceAll("Validation", "")+" is Visible ",StepName.replaceAll("Validation", "")+" Must be visible" );
+		Report("PASS","Verifying "+ StepName,StepName+" is Visible ",StepName+" Must be visible" );
 		log(StepName + " is Visible ");
 		}catch(Exception e){ 
 			String cause = e.toString();
 			log(StepName+" is not Visible ");
-			Report("FAIL",StepName, StepName.replaceAll("Validation", "")+" is not visible because "+cause.substring(1, 88) ,StepName.replaceAll("Validation", "")+" Must be visible");
+			Report("FAIL","Verifying "+StepName, StepName+" is not visible because "+cause.substring(1, 88) ,StepName+" Must be visible");
 			
 		}
 

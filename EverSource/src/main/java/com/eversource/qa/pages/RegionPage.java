@@ -20,6 +20,9 @@ public class RegionPage  extends TestBase {
 	
 		@FindBy(xpath="//div[@class='col-sm-6 col-xs-8']//img[@class='logo img-responsive']")
 		WebElement EverSourcelogo;
+		
+		@FindBy(xpath="//span[@id='CurrentServiceArea']")
+		WebElement ServiceRegionClick;
 			
 			@FindBy(xpath="//div[@id='map']//a[contains(text(),'New Hampshire')]")
 			static
@@ -61,7 +64,7 @@ public class RegionPage  extends TestBase {
 			try{
 				EverSourceMap.isDisplayed();
 			}catch(Exception e){
-				
+				ServiceRegionClick.click();
 			}
 			int regionnumber = getRandomInteger();
 	

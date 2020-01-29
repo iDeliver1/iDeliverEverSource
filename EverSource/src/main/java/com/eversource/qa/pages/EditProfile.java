@@ -39,7 +39,7 @@ public class EditProfile extends TestBase{
 		
 		SaveUdate.click();
 		
-		Extent_reporter.Menuvalidation("Update Validation", SaveVerfication);
+		Extent_reporter.Menuvalidation("EDIT MY PROFILE Page loads successfully  ", SaveVerfication);
 		
 	}
 }

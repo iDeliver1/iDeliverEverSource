@@ -28,15 +28,15 @@ public class EverSource_HeaderMenu extends TestBase {
 	
 		//WaitForObject(EverSouceTopHeader);
 		
-		Extent_reporter.Menuvalidation("Header TopMenu Validation",EverSouceTopHeader);
+		Extent_reporter.Menuvalidation("Header TopMenu ",EverSouceTopHeader);
 		
-		Extent_reporter.Menuvalidation("Header Menu Validation",EverSouceFileHeader);
+		Extent_reporter.Menuvalidation("Header Menu ",EverSouceFileHeader);
 	}
 	
 	public  void CheckSideMenu() throws Throwable{
 		WaitForObject(SideBarNavigation,"Check");
 		
-		Extent_reporter.Menuvalidation("Side Menu Validation",SideBarNavigation );
+		Extent_reporter.Menuvalidation("Side Menu ",SideBarNavigation );
 		
 		
 	}
