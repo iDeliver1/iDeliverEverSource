@@ -65,7 +65,7 @@ public class HomePage extends TestBase{
 			public static void clickOnAccountsLink(String regionName ) throws Throwable{
 				
 				log(regionName);
-				getChildReportname(" Click on My Account Tab");
+			
 				
 				
 				Thread.sleep(5000);
@@ -83,7 +83,7 @@ public class HomePage extends TestBase{
 				   case "Pay Bill": 
 					   WaitForObject(Paybill,"Click");
 					   log("Clicked on Pay Bill Link"); 
-					   Reporting("PASS","User  Clicked successfully on PayBill Tab","User should be abble to click on Pay Bill Tab");
+					   Reporting("PASS"," Click on My Account Tab","User  Clicked successfully on PayBill Tab","User should be abble to click on Pay Bill Tab");
 					   objcheck.CheckHeaderMenu();
 					   break;
 				   case "View Bill": 
@@ -93,7 +93,7 @@ public class HomePage extends TestBase{
 				   case "Account History": 
 					   WaitForObject(AccHisLink,"Click");
 					   log("Clicked on Account History Link");
-					   Reporting("PASS","User Clicked successfully on Account History Tab","User should be abble to click on Account History Tabs Tab");
+					   Reporting("PASS"," Click on My Account Tab","User Clicked successfully on Account History Tab","User should be abble to click on Account History Tabs Tab");
 					   objcheck.CheckHeaderMenu();
 					   objcheck.CheckSideMenu();
 					   break;

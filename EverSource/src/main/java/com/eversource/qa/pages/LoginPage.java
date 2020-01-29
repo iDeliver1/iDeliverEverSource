@@ -69,19 +69,17 @@ public class LoginPage extends TestBase {
 			}
 			
 			DialogueClose.click();
-			getChildReportname(" Menu Validation");
-			objcheck.CheckHeaderMenu();
-			
-			getChildReportname(" Username & Password Validation");
+	
 			if(validateSalesForceLogo()){
-		
-				log("Successful logging with username -  "+usr);
-				Reporting("Pass", "Logged in Successful with entered Username "+usr+" & password "+pwd, "User Should be able to login with Username "+usr+" & password "+pwd);
 				
+				log("Successful logging with username -  "+usr);
+				Reporting("Pass"," Username & Password Validation", "Logged in Successful with entered Username "+usr+" & password "+pwd, "User Should be able to login with Username "+usr+" & password "+pwd);
+				
+				objcheck.CheckHeaderMenu();
 				return new HomePage();
 
 			}else{
-				Reporting("FAIL", "Logged in Failed with entered Username"+usr+" & password"+pwd, "User Should be able to login with Username"+usr+" & password"+pwd);
+				Reporting("FAIL"," Username & Password Validation", "Logged in Failed with entered Username"+usr+" & password"+pwd, "User Should be able to login with Username"+usr+" & password"+pwd);
 				return new HomePage();
 			}
 			//return new HomePage();

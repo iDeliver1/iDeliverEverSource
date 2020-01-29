@@ -38,9 +38,7 @@ public class LoginPageTest extends TestBase{
 	@Test(priority=1)
 	public void LoginTest() throws Throwable{
 		log("----------------------- EV_Login_Validation -------------");
-		
-		getParentReportname("EV_Login_Validation");
-		
+		//getParentReportname("EV_Login_Validation");
 		//Selecting Region
 		Area.SelectRegion();
 		
@@ -53,7 +51,7 @@ public class LoginPageTest extends TestBase{
 		
 		log("----------------------- EV_Account_History_Tab_Validation --------------");
 		
-		getParentReportname("EV_Account_History_Tab_Validation");
+		//getParentReportname("EV_Account_History_Tab_Validation");
 		
 		 HomePage.clickOnAccountsLink("Account History");
 		
@@ -66,7 +64,7 @@ public class LoginPageTest extends TestBase{
 		
 		log("----------------------- EV_Pay_Bill_Tab_Validation --------------");
 		
-		getParentReportname("EV_Pay_Bill_Tab_Validation");
+		//getParentReportname("EV_Pay_Bill_Tab_Validation");
 		
 		HomePage.clickOnAccountsLink("Pay Bill");
 		

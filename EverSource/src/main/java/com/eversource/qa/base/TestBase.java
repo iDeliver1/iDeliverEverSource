@@ -77,11 +77,11 @@ public class TestBase  {
 
 	//Initiating  Browser 
 	public static void initialization() throws Throwable{
-		getParentReportname("EV_Launching");
+		//getParentReportname("Verify User is able to launch Eversource Page or not");
 		String browserName = prop.getProperty("browser");
 		
 		if(browserName.equals("chrome")){
-			getChildReportname("Verify User is able to launch Eversource Page or not");
+			
 			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/src/main/java/com/eversource/qa/driver/chromedriver.exe");
 			driver = new ChromeDriver(); 
 		}
@@ -101,7 +101,7 @@ public class TestBase  {
 		driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT, TimeUnit.SECONDS);		
 		driver.get(prop.getProperty("url"));
 		
-		Extent_reporter.validation( driver.getTitle(), "Eversource | Residential");
+		Extent_reporter.validation("Verify User is able to launch Eversource Page or not Validation", driver.getTitle(), "Eversource | Residential");
 	
 		
 }
@@ -118,19 +118,17 @@ public class TestBase  {
 		Extent_reporter.CreateRoportname(Reportname,extent);
 	}
 	
+	
+	
 	public static void getParentReportname(String Reportname){
 		Extent_reporter.CreateParentRoportname(Reportname,extent);
-	}
-	
-	public static void getChildReportname(String Reportname){
-		Extent_reporter.CreateChildRoportname(Reportname,extent);
 	}
 	
 	
 	
 	//Creating Report 
-	public static void Reporting(String Status,String ActualStep,String ExpectedStep) throws Throwable{
-		Extent_reporter.Report(Status, ActualStep,ExpectedStep);
+	public static void Reporting(String Status,String StepName,String ActualStep,String ExpectedStep) throws Throwable{
+		Extent_reporter.Report(Status, StepName, ActualStep, ExpectedStep);
 		
 	}
 	

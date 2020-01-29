@@ -21,6 +21,7 @@ public class EditProfileTest extends TestBase {
 	//Initializing
 	@BeforeSuite
 	public void setUp() throws Throwable{
+		getReportname("EV_Validation");
 		initialization();
 		loginPage = new LoginPage();
 		Area = new RegionPage();
@@ -33,7 +34,7 @@ public class EditProfileTest extends TestBase {
 		public void LoginTest() throws Throwable{
 			log("-----------------------"+new Object(){}.getClass().getEnclosingMethod().getName()+"--------------");
 			
-			getReportname(new Object(){}.getClass().getEnclosingMethod().getName());
+			getParentReportname("EV_Login_Validation");
 			
 			Area.SelectRegion();
 			
@@ -42,9 +43,9 @@ public class EditProfileTest extends TestBase {
 		
 		@Test(priority=2)
 		public void ProfileTest()throws Throwable{
-			log("-----------------------"+new Object(){}.getClass().getEnclosingMethod().getName()+"--------------");
+			log("-----------------------   EV_Profile_Update_Validation  --------------");
 			
-			getReportname(new Object(){}.getClass().getEnclosingMethod().getName());
+			getParentReportname("EV_Profile_Update_Validation");
 			
 			EditPro.EditProf();
 			

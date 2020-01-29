@@ -6,7 +6,9 @@ import org.testng.Assert;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.MediaEntityBuilder;
 import com.aventstack.extentreports.Status;
+import com.aventstack.extentreports.markuputils.Markup;
 import com.eversource.qa.base.TestBase;
 
 
@@ -34,7 +36,7 @@ public class Extent_reporter extends TestBase {
 		
 	}
 	
-	public static ExtentTest CreateChildRoportname(String Step_details,ExtentReports extent1){
+/*	public static ExtentTest CreateChildRoportname(String Step_details,ExtentReports extent1){
 		if(functioncall==1){ //For Checking Parent Logger is called or not
 			Stepnumber=1;
 		}
@@ -43,31 +45,44 @@ public class Extent_reporter extends TestBase {
 		functioncall=functioncall+1;
 		return child_logger;
 		
-	}
+	}*/
 	
 	
 //Reporting for Pass & Fail Event 
-	public static void Report(String Status1,String ActualStep,String ExpectedStep) throws Throwable{
+	public static void Report(String Status1,String Description,String ActualStep,String ExpectedStep) throws Throwable{
+		/*if(functioncall==1){ //For Checking Parent Logger is called or not
+			Stepnumber=1;
+		}*/
+		
+		
+		String ReportStatus = "<b>Step Number "+Stepnumber+"<br>Description :</b> "+Description+"<br><b>Expected :</b> "+ExpectedStep+"<br><b>Actual :</b> "+ActualStep;
 		if(Status1.equalsIgnoreCase("PASS")){
-			child_logger.log(Status.INFO, ExpectedStep);
-			child_logger.log(Status.PASS, ActualStep);
-			child_logger.addScreenCaptureFromPath(Gernric_functions.fScreenReport());
+			 
+			System.out.println(ReportStatus);
+			logger.log(Status.PASS, ReportStatus);
+			//logger.log(Status.PASS, ReportStatus, MediaEntityBuilder.createScreenCaptureFromPath(Gernric_functions.fScreenReport()).build());
+			logger.addScreenCaptureFromPath(Gernric_functions.fScreenReport());
+			
 		}
 		else{
-			child_logger.log(Status.INFO, ExpectedStep);
-			child_logger.log(Status.FAIL, ActualStep);
+			
+			logger.log(Status.FAIL, ReportStatus);
+			logger.addScreenCaptureFromPath(Gernric_functions.fScreenReport());
+			//logger.log(Status.FAIL, ReportStatus, MediaEntityBuilder.createScreenCaptureFromPath(Gernric_functions.fScreenReport()).build());
 			closeBrowser();
 		}
+		Stepnumber=Stepnumber+1;
+		//functioncall=functioncall+1;
 }
 	
 	//Validation for actual and expected 
-	public static void validation(String Actual,String Expected) throws Throwable{
+	public static void validation(String StepName,String Actual,String Expected) throws Throwable{
 		
 		try{
 			Assert.assertEquals(Actual, Expected);
-			Report("PASS","Page launch Successfull"+ Actual ,"Should be able to launch "+Expected);
+			Report("PASS",StepName,"Page launch Successfull "+ Actual ,"Should be able to launch "+Expected);
 			}catch(Exception e){ 
-				Report("FAIL","Page launch unsuccessfull"+ Actual ,"Should be able to launch "+Expected);
+				Report("FAIL",StepName,"Page launch unsuccessfull "+ Actual ,"Should be able to launch "+Expected);
 			}
 	
 	}
@@ -76,14 +91,14 @@ public static void Argvalidation(String StepName,String Actual,String Expected) 
 		
 		try{
 			Assert.assertEquals(Actual, Expected);
-			Report("PASS",StepName+" is equal to "+Actual,StepName+"should be equal to "+Expected);
+			Report("PASS",StepName,StepName.replaceAll("Validation", "")+" is equal to "+Actual,StepName+"should be equal to "+Expected);
 			
 			log(StepName+" Validation     "+Actual + " is equal to " +Expected);
 			
 			}catch(Exception e){ 
 				log(StepName+"  Validation    "+ Actual + " is not  equal to " +Expected+" because "+e);
 				
-				Report("FAIL",StepName+"is equal to "+Actual+""+e,StepName+"should be equal to "+Expected);
+				Report("FAIL",StepName,StepName.replaceAll("Validation", "")+"is equal to "+Actual+""+e,StepName+"should be equal to "+Expected);
 			}
 	
 	}
@@ -92,11 +107,12 @@ public static void Menuvalidation(String StepName,WebElement element ) throws Th
 	
 	try{
 		 Assert.assertEquals(true, element.isDisplayed());
-		Report("PASS", StepName+" is Visible ",StepName+" Must be visible" );
+		Report("PASS", StepName,StepName.replaceAll("Validation", "")+" is Visible ",StepName.replaceAll("Validation", "")+" Must be visible" );
 		log(StepName + " is Visible ");
 		}catch(Exception e){ 
+			String cause = e.toString();
 			log(StepName+" is not Visible ");
-			Report("FAIL",StepName+ " is not visible because"+e ,StepName+" Must be visible");
+			Report("FAIL",StepName, StepName.replaceAll("Validation", "")+" is not visible because "+cause.substring(1, 88) ,StepName.replaceAll("Validation", "")+" Must be visible");
 			
 		}
 

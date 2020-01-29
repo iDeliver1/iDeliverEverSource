@@ -1,8 +1,8 @@
 package com.eversource.qa.testcases;
 
+
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-
 import com.eversource.qa.base.TestBase;
 import com.eversource.qa.pages.OutagesAndStormsPage;
 import com.eversource.qa.pages.RegionPage;
@@ -14,6 +14,7 @@ public class OutageStormTest extends TestBase {
 	@BeforeTest
 	public void setup() throws Throwable
 	{
+		getReportname("EV_Validation");
 		initialization();
 		OutagePage = new OutagesAndStormsPage();	
 		Area = new RegionPage();
@@ -22,12 +23,14 @@ public class OutageStormTest extends TestBase {
 	@Test
 	public void stormOutage() throws Throwable
 	{
-		log("-----------------------"+new Object(){}.getClass().getEnclosingMethod().getName()+"--------------");
-		getReportname(new Object(){}.getClass().getEnclosingMethod().getName());
+		log("--------------------    EV_Outage_Validation   -----------------");
+		getParentReportname("EV_Outage_Validation");
 		
 		Area.SelectRegion();
 		
 		OutagePage.OutageStorm();
 		
 	}
+	
+	
 }

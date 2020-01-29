@@ -37,15 +37,14 @@ public class AccountHistory extends TestBase {
 			
 			FilterButton.click();
 			
-			
-			getChildReportname(" Table Records Validation");
+	
 	if(	TableVerfication.findElements(By.tagName("tr")).size()<1){
 		log("There is no data");
-		Reporting("FAIL","There is not records in the table","There must be records on table");
+		Reporting("FAIL"," Table Records Validation","There is not records in the table","There must be records on table");
 	}
 	else{
 		log("There is data");
-		Reporting("PASS","There is  records in the table","There must be records on table");
+		Reporting("PASS"," Table Records Validation","There is  records in the table","There must be records on table");
 	}
 		}
 	

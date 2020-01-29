@@ -66,7 +66,7 @@ public class OutagesAndStormsPage extends TestBase {
 		}
 		GoButton.click();
 		ReportOutage.click();
-		Extent_reporter.Menuvalidation("AddressDisplayed", Address);
+		Extent_reporter.Menuvalidation("AddressDisplayed Validation", Address);
 		
 		Thread.sleep(5000);
 		NeighborsOut.click();
