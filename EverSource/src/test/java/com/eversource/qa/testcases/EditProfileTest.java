@@ -34,7 +34,7 @@ public class EditProfileTest extends TestBase {
 		public void LoginTest() throws Throwable{
 			log("-----------------------"+new Object(){}.getClass().getEnclosingMethod().getName()+"--------------");
 			
-			getParentReportname("EV_Login_Validation");
+			//getParentReportname("EV_Login_Validation");
 			
 			Area.SelectRegion();
 			
@@ -45,7 +45,7 @@ public class EditProfileTest extends TestBase {
 		public void ProfileTest()throws Throwable{
 			log("-----------------------   EV_Profile_Update_Validation  --------------");
 			
-			getParentReportname("EV_Profile_Update_Validation");
+			//getParentReportname("EV_Profile_Update_Validation");
 			
 			EditPro.EditProf();
 			

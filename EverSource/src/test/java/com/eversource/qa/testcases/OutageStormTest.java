@@ -24,7 +24,7 @@ public class OutageStormTest extends TestBase {
 	public void stormOutage() throws Throwable
 	{
 		log("--------------------    EV_Outage_Validation   -----------------");
-		getParentReportname("EV_Outage_Validation");
+		//getParentReportname("EV_Outage_Validation");
 		
 		Area.SelectRegion();
 		
