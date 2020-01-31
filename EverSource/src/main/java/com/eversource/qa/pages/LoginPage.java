@@ -46,7 +46,7 @@ public class LoginPage extends TestBase {
 		}
 		
 		
-		public HomePage login(String usr, String pwd) throws Throwable 
+		public HomePage login(String usr, String pwd,String TestName) throws Throwable 
 		{
 	
 			log("Logging testing with username - "+usr);
@@ -61,25 +61,25 @@ public class LoginPage extends TestBase {
 			
 			Signin.click();	
 			
-			try{
+			/*try{
 				waitforElement(10, DialogueClose);
 				DialogueClose.isDisplayed();
 			}catch(Exception e){
 				
-			}
+			}*/
 			
-			DialogueClose.click();
+			//DialogueClose.click();
 	
 			if(validateSalesForceLogo()){
 				
 				log("Successful logging with username -  "+usr);
-				Reporting("Pass"," Username & Password ", "Logged in Successful with entered Username "+usr+" & password "+pwd, "User Should be able to login with Username "+usr+" & password "+pwd);
+				Reporting("Pass"," Username & Password ", "Logged in Successful with entered Username "+usr+" & password "+pwd, "User Should be able to login with Username "+usr+" & password "+pwd,TestName);
 				
-				objcheck.CheckHeaderMenu();
+				objcheck.CheckHeaderMenu(TestName);
 				return new HomePage();
 
 			}else{
-				Reporting("FAIL"," Username & Password ", "Logged in Failed with entered Username"+usr+" & password"+pwd, "User Should be able to login with Username"+usr+" & password"+pwd);
+				Reporting("FAIL"," Username & Password ", "Logged in Failed with entered Username"+usr+" & password"+pwd, "User Should be able to login with Username"+usr+" & password"+pwd,TestName);
 				return new HomePage();
 			}
 			//return new HomePage();

@@ -43,9 +43,9 @@ public class OutagesAndStormsPage extends TestBase {
 		objcheck = new EverSource_HeaderMenu();
 	}
 
-	public void OutageStorm() throws Throwable
+	public void OutageStorm(String TestName) throws Throwable
 	{
-		objcheck.CheckHeaderMenu();
+		objcheck.CheckHeaderMenu(TestName);
 		
 		
 		OutageStorm.click();
@@ -66,7 +66,7 @@ public class OutagesAndStormsPage extends TestBase {
 		}
 		GoButton.click();
 		ReportOutage.click();
-		Extent_reporter.Menuvalidation("AddressDisplayed Validation", Address);
+		Extent_reporter.Menuvalidation("AddressDisplayed Validation", Address,TestName);
 		
 		Thread.sleep(5000);
 		NeighborsOut.click();

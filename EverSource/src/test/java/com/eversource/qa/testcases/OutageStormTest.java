@@ -14,8 +14,8 @@ public class OutageStormTest extends TestBase {
 	@BeforeTest
 	public void setup() throws Throwable
 	{
-		getReportname("EV_Validation");
-		initialization();
+		getReportname("EV_OutageStormTest_Validation");
+		initialization("Outarge");
 		OutagePage = new OutagesAndStormsPage();	
 		Area = new RegionPage();
 	}
@@ -28,7 +28,7 @@ public class OutageStormTest extends TestBase {
 		
 		Area.SelectRegion();
 		
-		OutagePage.OutageStorm();
+		OutagePage.OutageStorm("Outarge");
 		
 	}
 	

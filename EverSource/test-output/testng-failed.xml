@@ -1,9 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test verbose="2" name="Default test">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="classes">
+  <test name="Test">
     <classes>
+      <class name="com.eversource.qa.testcases.EditProfileTest"/>
       <class name="com.eversource.qa.testcases.LoginPageTest"/>
     </classes>
-  </test> <!-- Default test -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test -->
+  <test name="Test(failed)" parallel="classes">
+    <classes>
+      <class name="com.eversource.qa.testcases.EditProfileTest">
+        <methods>
+          <include name="LoginTest"/>
+          <include name="setUp"/>
+          <include name="ProfileTest"/>
+        </methods>
+      </class> <!-- com.eversource.qa.testcases.EditProfileTest -->
+      <class name="com.eversource.qa.testcases.LoginPageTest">
+        <methods>
+          <include name="PayBillTest"/>
+          <include name="AccountHistoryTest"/>
+          <include name="LoginTest"/>
+        </methods>
+      </class> <!-- com.eversource.qa.testcases.LoginPageTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

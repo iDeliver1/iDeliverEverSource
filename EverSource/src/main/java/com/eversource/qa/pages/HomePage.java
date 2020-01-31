@@ -62,7 +62,7 @@ public class HomePage extends TestBase{
 			
 		
 			
-			public static void clickOnAccountsLink(String regionName ) throws Throwable{
+			public static void clickOnAccountsLink(String regionName ,String TestName) throws Throwable{
 				
 				log(regionName);
 			
@@ -83,8 +83,8 @@ public class HomePage extends TestBase{
 				   case "Pay Bill": 
 					   WaitForObject(Paybill,"Click");
 					   log("Clicked on Pay Bill Link"); 
-					   Reporting("PASS"," Verifying My Account Tab","User  Clicked successfully on PayBill Tab","User should be abble to click on Pay Bill Tab");
-					   objcheck.CheckHeaderMenu();
+					   Reporting("PASS"," Verifying My Account Tab","User  Clicked successfully on PayBill Tab","User should be abble to click on Pay Bill Tab",TestName);
+					   objcheck.CheckHeaderMenu(TestName);
 					   break;
 				   case "View Bill": 
 					   Viewbill.click();
@@ -93,9 +93,9 @@ public class HomePage extends TestBase{
 				   case "Account History": 
 					   WaitForObject(AccHisLink,"Click");
 					   log("Clicked on Account History Link");
-					   Reporting("PASS"," Verifying My Account Tab","User Clicked successfully on Account History Tab","User should be abble to click on Account History Tabs Tab");
-					   objcheck.CheckHeaderMenu();
-					   objcheck.CheckSideMenu();
+					   Reporting("PASS"," Verifying My Account Tab","User Clicked successfully on Account History Tab","User should be abble to click on Account History Tabs Tab",TestName);
+					   objcheck.CheckHeaderMenu(TestName);
+					   objcheck.CheckSideMenu(TestName);
 					   break;
 				   //Default case statement  
 				   default:log("Not link found"); 

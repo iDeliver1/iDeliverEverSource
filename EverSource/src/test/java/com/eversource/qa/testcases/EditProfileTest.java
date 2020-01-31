@@ -3,6 +3,7 @@ package com.eversource.qa.testcases;
 
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import com.eversource.qa.base.TestBase;
@@ -19,13 +20,14 @@ public class EditProfileTest extends TestBase {
 	EditProfile EditPro;
 	
 	//Initializing
-	@BeforeSuite
+	@BeforeTest
 	public void setUp() throws Throwable{
-		getReportname("EV_Validation");
-		initialization();
+		getReportname("EV_EditProfileTest_Validation");
+		initialization("Edit");
 		loginPage = new LoginPage();
 		Area = new RegionPage();
 		EditPro = new EditProfile();
+		Area.SelectRegion();
 	}
 
 	
@@ -36,9 +38,8 @@ public class EditProfileTest extends TestBase {
 			
 			//getParentReportname("EV_Login_Validation");
 			
-			Area.SelectRegion();
-			
-			homepage = loginPage.login(prop.getProperty("username"), prop.getProperty("password"));	
+			//Area.SelectRegion();
+			homepage =	 loginPage.login(prop.getProperty("username"), prop.getProperty("password"),"Edit");	
 		}
 		
 		@Test(priority=2)
@@ -47,7 +48,7 @@ public class EditProfileTest extends TestBase {
 			
 			//getParentReportname("EV_Profile_Update_Validation");
 			
-			EditPro.EditProf();
+			EditPro.EditProf("Edit");
 			
 		}
 		

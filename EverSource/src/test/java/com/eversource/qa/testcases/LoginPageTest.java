@@ -1,9 +1,11 @@
 package com.eversource.qa.testcases;
 
 
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Test;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Test;
 
 import com.eversource.qa.base.TestBase;
 import com.eversource.qa.pages.AccountHistory;
@@ -24,13 +26,14 @@ public class LoginPageTest extends TestBase{
 	//Initializing
 	@BeforeTest
 	public void setUp() throws Throwable{
-		getReportname("EV_Validation");
+		getReportname("EV_LoginPageTest_Validation");
 		
-		initialization();
+		initialization("Login");
 		loginPage = new LoginPage();
 		Area = new RegionPage();
 		paybill = new PayBill();
 		AccountHis = new AccountHistory();
+		Area.SelectRegion();
 	}
 	
 	
@@ -40,9 +43,9 @@ public class LoginPageTest extends TestBase{
 		log("----------------------- EV_Login_Validation -------------");
 		//getParentReportname("EV_Login_Validation");
 		//Selecting Region
-		Area.SelectRegion();
 		
-		homepage = loginPage.login(prop.getProperty("username"), prop.getProperty("password"));	
+		
+		homepage = loginPage.login(prop.getProperty("username"), prop.getProperty("password"),"Login");	
 	}
 	
 	//Account History Test
@@ -53,9 +56,9 @@ public class LoginPageTest extends TestBase{
 		
 		//getParentReportname("EV_Account_History_Tab_Validation");
 		
-		 HomePage.clickOnAccountsLink("Account History");
+		 HomePage.clickOnAccountsLink("Account History","Login");
 		
-		 AccountHis.AccountHistoryTab();
+		 AccountHis.AccountHistoryTab("Login");
 	}
 	
 	//Pay Bill Test
@@ -66,10 +69,10 @@ public class LoginPageTest extends TestBase{
 		
 		//getParentReportname("EV_Pay_Bill_Tab_Validation");
 		
-		HomePage.clickOnAccountsLink("Pay Bill");
+		HomePage.clickOnAccountsLink("Pay Bill","Login");
 		
 		
-		paybill.PayBillTab("Aron");
+		paybill.PayBillTab("Aron","Login");
 		
 	}
 

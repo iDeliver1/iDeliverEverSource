@@ -27,7 +27,7 @@ public class EditProfile extends TestBase{
 	}
 
 	
-	public void EditProf() throws Throwable{
+	public void EditProf(String TestName) throws Throwable{
 		waitforElement(10, Userlogo);
 		
 		
@@ -39,7 +39,7 @@ public class EditProfile extends TestBase{
 		
 		SaveUdate.click();
 		
-		Extent_reporter.Menuvalidation("EDIT MY PROFILE Page loads successfully  ", SaveVerfication);
+		Extent_reporter.Menuvalidation("EDIT MY PROFILE Page loads successfully  ", SaveVerfication,TestName);
 		
 	}
 }
