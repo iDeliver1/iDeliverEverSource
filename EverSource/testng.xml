@@ -1,10 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="2" name="Suite" parallel="classes">
+<suite thread-count="3" name="Suite" parallel="classes">
   <test name="Test">
     <classes>
       <class name="com.eversource.qa.testcases.EditProfileTest"/>
-       <class name="com.eversource.qa.testcases.LoginPageTest"/>
     </classes>
-  </test> <!-- Test -->
+  </test> 
+  
+  <test name="Test2">
+    <classes>
+      <class name="com.eversource.qa.testcases.LoginPageTest"/>
+    </classes>
+  </test>
+  
+  <test name="Test3">
+    <classes>
+      <class name="com.eversource.qa.testcases.OutageStormTest"/>
+    </classes>
+  </test>
+  
+  <!-- Test -->
 </suite> <!-- Suite -->

@@ -76,7 +76,7 @@ public class PayBill extends TestBase {
 	}
 
 	
-	public void PayBillTab(String PaymentOption,String TestName) throws Throwable{
+	public void PayBillTab(String PaymentOption ) throws Throwable{
 		try{
 			if(AccountNickName.getText().isEmpty()){
 				AccNo = AccountNumber.getText();
@@ -133,19 +133,19 @@ public class PayBill extends TestBase {
 		   
 		   //Validation for Account Number equals or not
 		  
-		   Extent_reporter.Argvalidation("Account Number ",AccNo, AccountNumber1.getText(),TestName);
+		   Extent_reporter.Argvalidation("Account Number ",AccNo, AccountNumber1.getText());
 		   
 		 //Validation for Due Date equals or not
 		 
-		   Extent_reporter.Argvalidation("Due Date ",DDate, DueDate1.getText(),TestName);
+		   Extent_reporter.Argvalidation("Due Date ",DDate, DueDate1.getText());
 		   
 		 //Validation for Amount Price equals or not
 	
-		   Extent_reporter.Argvalidation("Amount Price ",AmtPri, AmountPrice1.getText(),TestName);
+		   Extent_reporter.Argvalidation("Amount Price ",AmtPri, AmountPrice1.getText());
 		   
 		 //Validation for Actual Date equals or not
 		 
-		   Extent_reporter.Argvalidation("Actual Date ",AccDate, ActualDate1.getText(),TestName);
+		   Extent_reporter.Argvalidation("Actual Date ",AccDate, ActualDate1.getText());
 		
 		
 		

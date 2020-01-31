@@ -3,6 +3,7 @@ package com.eversource.qa.pages;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+
 import com.eversource.qa.base.TestBase;
 import com.eversource.qa.util.Extent_reporter;
 
@@ -43,17 +44,24 @@ public class OutagesAndStormsPage extends TestBase {
 		objcheck = new EverSource_HeaderMenu();
 	}
 
-	public void OutageStorm(String TestName) throws Throwable
+	public void OutageStorm() throws Throwable
 	{
-		objcheck.CheckHeaderMenu(TestName);
+		objcheck.CheckHeaderMenu();
 		
 		
 		OutageStorm.click();
+		
 		ReportCheckOutage.click();
+		try{
 	
 		AccountField.click();
 		AccountField.sendKeys("10730101077");
-	
+		}catch(Exception e){
+			System.out.println(e);
+			String cause = e.toString();
+			Reporting("Fail", "Insert Account Number", "User Unable to insert account number because of" +cause.substring(1, 88), "User should be able to insert Account Number");
+			closeBrowser();
+		}
 	
 	
 		try{
@@ -66,7 +74,7 @@ public class OutagesAndStormsPage extends TestBase {
 		}
 		GoButton.click();
 		ReportOutage.click();
-		Extent_reporter.Menuvalidation("AddressDisplayed Validation", Address,TestName);
+		Extent_reporter.Menuvalidation("AddressDisplayed Validation", Address);
 		
 		Thread.sleep(5000);
 		NeighborsOut.click();

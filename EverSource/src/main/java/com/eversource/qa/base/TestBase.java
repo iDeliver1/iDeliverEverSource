@@ -76,7 +76,7 @@ public class TestBase  {
 			}
 
 	//Initiating  Browser 
-	public static void initialization(String TestName) throws Throwable{
+	public static void initialization() throws Throwable{
 		//getParentReportname("Verify User is able to launch Eversource Page or not");
 		String browserName = prop.getProperty("browser");
 		
@@ -101,7 +101,7 @@ public class TestBase  {
 		driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT, TimeUnit.SECONDS);		
 		driver.get(prop.getProperty("url"));
 		
-		Extent_reporter.validation("Verify User is able to launch Eversource Page or not Validation", driver.getTitle(), "Eversource | Residential",TestName);
+		Extent_reporter.validation("Verify User is able to launch Eversource Page or not Validation", driver.getTitle(), "Eversource | Residential");
 	
 		
 }
@@ -127,8 +127,8 @@ public class TestBase  {
 	
 	
 	//Creating Report 
-	public static void Reporting(String Status,String StepName,String ActualStep,String ExpectedStep,String TestName) throws Throwable{
-		Extent_reporter.Report(Status, StepName, ActualStep, ExpectedStep,TestName);
+	public static void Reporting(String Status,String StepName,String ActualStep,String ExpectedStep) throws Throwable{
+		Extent_reporter.Report(Status, StepName, ActualStep, ExpectedStep);
 		
 	}
 	

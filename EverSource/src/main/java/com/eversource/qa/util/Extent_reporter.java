@@ -48,7 +48,7 @@ public class Extent_reporter extends TestBase {
 	
 	
 //Reporting for Pass & Fail Event 
-	public static void Report(String Status1,String Description,String ActualStep,String ExpectedStep,String TestName) throws Throwable{
+	/*public static void Report(String Status1,String Description,String ActualStep,String ExpectedStep,String TestName) throws Throwable{
 		
 		//For Parallel Browsing
 		if(TestName.equalsIgnoreCase("Login")){
@@ -95,48 +95,94 @@ public class Extent_reporter extends TestBase {
 			}
 			i=i+1;
 		}
-		//functioncall=functioncall+1;
+		
+		else{
+			String ReportStatus = "<b>Step Number "+functioncall+"<br>Description :</b> "+Description+"<br><b>Expected :</b> "+ExpectedStep+"<br><b>Actual :</b> "+ActualStep;
+			if(Status1.equalsIgnoreCase("PASS")){
+				 
+				
+				logep.log(Status.PASS, ReportStatus);
+				//logger.log(Status.PASS, ReportStatus, MediaEntityBuilder.createScreenCaptureFromPath(Gernric_functions.fScreenReport()).build());
+				logep.addScreenCaptureFromPath(Gernric_functions.fScreenReport());
+				
+			}
+			else{
+				
+				logep.log(Status.FAIL, ReportStatus);
+				logep.addScreenCaptureFromPath(Gernric_functions.fScreenReport());
+				closeBrowser();
+				//logger.log(Status.FAIL, ReportStatus, MediaEntityBuilder.createScreenCaptureFromPath(Gernric_functions.fScreenReport()).build());
+				
+			}
+			functioncall=functioncall+1;
+		}
+		
 }
+	*/
+	public static void Report(String Status1,String Description,String ActualStep,String ExpectedStep) throws Throwable{
+		String ReportStatus = "<b>Step Number "+functioncall+"<br>Description :</b> "+Description+"<br><b>Expected :</b> "+ExpectedStep+"<br><b>Actual :</b> "+ActualStep;
+		if(Status1.equalsIgnoreCase("PASS")){
+			 
+			
+			logger.log(Status.PASS, ReportStatus);
+			//logger.log(Status.PASS, ReportStatus, MediaEntityBuilder.createScreenCaptureFromPath(Gernric_functions.fScreenReport()).build());
+			logger.addScreenCaptureFromPath(Gernric_functions.fScreenReport());
+			
+		}
+		else{
+			
+			logger.log(Status.FAIL, ReportStatus);
+			logger.addScreenCaptureFromPath(Gernric_functions.fScreenReport());
+			closeBrowser();
+			//logger.log(Status.FAIL, ReportStatus, MediaEntityBuilder.createScreenCaptureFromPath(Gernric_functions.fScreenReport()).build());
+			
+		}
+		functioncall=functioncall+1;
+	}
+	
+	
+	
+	
 	
 
 	//Validation for actual and expected 
-	public static void validation(String StepName,String Actual,String Expected,String TestName) throws Throwable{
+	public static void validation(String StepName,String Actual,String Expected) throws Throwable{
 		
 		try{
 			Assert.assertEquals(Actual, Expected);
-			Report("PASS",StepName,"Page launch Successfull "+ Actual ,"Should be able to launch "+Expected,TestName);
+			Report("PASS",StepName,"Page launch Successfull "+ Actual ,"Should be able to launch "+Expected);
 			}catch(Exception e){ 
-				Report("FAIL",StepName,"Page launch unsuccessfull "+ Actual ,"Should be able to launch "+Expected,TestName);
+				Report("FAIL",StepName,"Page launch unsuccessfull "+ Actual ,"Should be able to launch "+Expected);
 			}
 	
 	}
 	
-public static void Argvalidation(String StepName,String Actual,String Expected,String TestName) throws Throwable{
+public static void Argvalidation(String StepName,String Actual,String Expected) throws Throwable{
 		
 		try{
 			Assert.assertEquals(Actual, Expected);
-			Report("PASS","Verifying "+StepName,StepName+" is equal to "+Actual,StepName+"should be equal to "+Expected,TestName);
+			Report("PASS","Verifying "+StepName,StepName+" is equal to "+Actual,StepName+"should be equal to "+Expected);
 			
 			log(StepName+" Validation     "+Actual + " is equal to " +Expected);
 			
 			}catch(Exception e){ 
 				log(StepName+"  Validation    "+ Actual + " is not  equal to " +Expected+" because "+e);
 				
-				Report("FAIL","Verifying "+StepName,StepName+"is equal to "+Actual+""+e,StepName+"should be equal to "+Expected,TestName);
+				Report("FAIL","Verifying "+StepName,StepName+"is equal to "+Actual+""+e,StepName+"should be equal to "+Expected);
 			}
 	
 	}
 
-public static void Menuvalidation(String StepName,WebElement element,String TestName ) throws Throwable{
+public static void Menuvalidation(String StepName,WebElement element) throws Throwable{
 	
 	try{
 		 Assert.assertEquals(true, element.isDisplayed());
-		Report("PASS","Verifying "+ StepName,StepName+" is Visible ",StepName+" Must be visible",TestName );
+		Report("PASS","Verifying "+ StepName,StepName+" is Visible ",StepName+" Must be visible");
 		log(StepName + " is Visible ");
 		}catch(Exception e){ 
 			String cause = e.toString();
 			log(StepName+" is not Visible ");
-			Report("FAIL","Verifying "+StepName, StepName+" is not visible because "+cause.substring(1, 88) ,StepName+" Must be visible",TestName);
+			Report("FAIL","Verifying "+StepName, StepName+" is not visible because "+cause.substring(1, 88) ,StepName+" Must be visible");
 			
 		}
 

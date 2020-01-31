@@ -23,7 +23,7 @@ public class EditProfileTest extends TestBase {
 	@BeforeTest
 	public void setUp() throws Throwable{
 		getReportname("EV_EditProfileTest_Validation");
-		initialization("Edit");
+		initialization();
 		loginPage = new LoginPage();
 		Area = new RegionPage();
 		EditPro = new EditProfile();
@@ -39,7 +39,7 @@ public class EditProfileTest extends TestBase {
 			//getParentReportname("EV_Login_Validation");
 			
 			//Area.SelectRegion();
-			homepage =	 loginPage.login(prop.getProperty("username"), prop.getProperty("password"),"Edit");	
+			homepage =	 loginPage.login(prop.getProperty("username"), prop.getProperty("password"));	
 		}
 		
 		@Test(priority=2)
@@ -48,7 +48,7 @@ public class EditProfileTest extends TestBase {
 			
 			//getParentReportname("EV_Profile_Update_Validation");
 			
-			EditPro.EditProf("Edit");
+			EditPro.EditProf();
 			
 		}
 		

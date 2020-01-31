@@ -24,19 +24,19 @@ public class EverSource_HeaderMenu extends TestBase {
 	}
 	
 	
-	public  void CheckHeaderMenu(String TestName) throws Throwable{
+	public  void CheckHeaderMenu() throws Throwable{
 	
 		//WaitForObject(EverSouceTopHeader);
 		
-		Extent_reporter.Menuvalidation("Header TopMenu ",EverSouceTopHeader,TestName);
+		Extent_reporter.Menuvalidation("Header TopMenu ",EverSouceTopHeader);
 		
-		Extent_reporter.Menuvalidation("Header Menu ",EverSouceFileHeader,TestName);
+		Extent_reporter.Menuvalidation("Header Menu ",EverSouceFileHeader);
 	}
 	
-	public  void CheckSideMenu(String TestName) throws Throwable{
+	public  void CheckSideMenu() throws Throwable{
 		WaitForObject(SideBarNavigation,"Check");
 		
-		Extent_reporter.Menuvalidation("Side Menu ",SideBarNavigation ,TestName);
+		Extent_reporter.Menuvalidation("Side Menu ",SideBarNavigation );
 		
 		
 	}

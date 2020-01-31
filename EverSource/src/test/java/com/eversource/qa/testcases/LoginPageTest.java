@@ -28,7 +28,7 @@ public class LoginPageTest extends TestBase{
 	public void setUp() throws Throwable{
 		getReportname("EV_LoginPageTest_Validation");
 		
-		initialization("Login");
+		initialization();
 		loginPage = new LoginPage();
 		Area = new RegionPage();
 		paybill = new PayBill();
@@ -45,7 +45,7 @@ public class LoginPageTest extends TestBase{
 		//Selecting Region
 		
 		
-		homepage = loginPage.login(prop.getProperty("username"), prop.getProperty("password"),"Login");	
+		homepage = loginPage.login(prop.getProperty("username"), prop.getProperty("password"));	
 	}
 	
 	//Account History Test
@@ -56,9 +56,9 @@ public class LoginPageTest extends TestBase{
 		
 		//getParentReportname("EV_Account_History_Tab_Validation");
 		
-		 HomePage.clickOnAccountsLink("Account History","Login");
+		 HomePage.clickOnAccountsLink("Account History");
 		
-		 AccountHis.AccountHistoryTab("Login");
+		 AccountHis.AccountHistoryTab();
 	}
 	
 	//Pay Bill Test
@@ -69,10 +69,10 @@ public class LoginPageTest extends TestBase{
 		
 		//getParentReportname("EV_Pay_Bill_Tab_Validation");
 		
-		HomePage.clickOnAccountsLink("Pay Bill","Login");
+		HomePage.clickOnAccountsLink("Pay Bill");
 		
 		
-		paybill.PayBillTab("Aron","Login");
+		paybill.PayBillTab("Aron");
 		
 	}
 
